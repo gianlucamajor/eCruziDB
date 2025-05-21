@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             modalBody.innerHTML = '';
                             segments.forEach(segment => {
                                 const modalLink = document.createElement('a');
-                                modalLink.href = `http://localhost:8080/igv-webapp/?locus=${segment}`;
+                                modalLink.href = `https://projetos.lbi.iq.usp.br/trypanosoma/epitopes-db/igv-webapp/?locus=${segment}`;
                                 modalLink.textContent = segment;
                                 modalLink.target = '_blank';
                                 modalBody.appendChild(modalLink);
@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             modalBody.innerHTML = '';
                             msas.forEach(msa => {
                                 const modalLink = document.createElement('a');
-                                modalLink.href = `http://localhost:8080/mview/${msa}.html`;
+                                modalLink.href = `https://projetos.lbi.iq.usp.br/trypanosoma/epitopes-db/mview/${msa}.html`;
                                 modalLink.textContent = msa;
                                 modalLink.target = '_blank';
                                 modalBody.appendChild(modalLink);
