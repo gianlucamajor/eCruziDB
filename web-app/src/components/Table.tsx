@@ -41,24 +41,39 @@ function Table() {
   );
 
   return (
-    <div className="container my-5">
-        <div className="input-group">
-            <input 
-                type="search" 
-                placeholder="Search"  
-                className="form-control border-end-0 border rounded-pill"
-                id="example-search-input"
-                onChange={(e) => setSearch(e.target.value)}
-            />
-        </div>        
+    <div className="container my-5" style={{ maxHeight: "80vh", display: "flex", flexDirection: "column" }}>
+      <div
+        className="input-group"
+        style={{
+          position: "sticky",
+          top: 0,
+          zIndex: 2,
+          background: "white",
+          paddingTop: "1rem",
+          paddingBottom: "1rem",
+        }}
+      >
+        <input
+          type="search"
+          placeholder="Search"
+          className="form-control border-end-0 border rounded-pill"
+          id="example-search-input"
+          onChange={(e) => setSearch(e.target.value)}
+          value={search}
+        />
+      </div>
       {error && <div className="alert alert-danger">{error}</div>}
-      <DataTable 
-        columns={columns} 
-        data={filteredData} 
-        pagination // <-- This enables pagination
-        paginationPerPage={25}
-        paginationRowsPerPageOptions={[25, 50, 100]}
-      />
+      <div style={{ flex: 1, minHeight: 0 }}>
+        <DataTable
+          columns={columns}
+          data={filteredData}
+          pagination
+          paginationPerPage={25}
+          paginationRowsPerPageOptions={[25, 50, 100]}
+          fixedHeader
+          fixedHeaderScrollHeight="60vh"
+        />
+      </div>
     </div>
   );
 }
