@@ -1,42 +1,70 @@
-# My Bootstrap Project
+# Trypanosoma cruzi Epitopes Database Project
 
-This project is a simple web application built using Bootstrap for responsive design and custom styles and scripts for added functionality.
+This project is database of epitopes from T.cruzi coming phage display assay.
 
 ## Project Structure
 
 ```
-my-bootstrap-project
-├── src
-│   ├── index.html        # Main HTML document
-│   ├── css
-│   │   └── styles.css    # Custom CSS styles
-│   ├── js
-│   │   └── scripts.js     # Custom JavaScript code
-├── package.json          # npm configuration file
-└── README.md             # Project documentation
+t-cruzi-epitopes-db
+├── README.md
+└── web-app
+    ├── eslint.config.js
+    ├── index.html
+    ├── package.json
+    ├── package-lock.json
+    ├── public
+    │   ├── data
+    │   │   └── epitopes-data.json
+    │   └── favicon.ico
+    ├── README.md
+    ├── src
+    │   ├── App.css
+    │   ├── App.tsx
+    │   ├── assets
+    │   │   └── react.svg
+    │   ├── components
+    │   │   ├── FeaturesCell.tsx
+    │   │   ├── FeaturesModal.tsx
+    │   │   ├── PeptidesCell.tsx
+    │   │   ├── PeptidesModal.tsx
+    │   │   ├── SearchBar.tsx
+    │   │   └── Table.tsx
+    │   ├── index.css
+    │   ├── main.tsx
+    │   ├── types
+    │   │   ├── Epitope.ts
+    │   │   └── User.ts
+    │   └── vite-env.d.ts
+    ├── tsconfig.app.json
+    ├── tsconfig.json
+    ├── tsconfig.node.json
+    └── vite.config.ts
 ```
 
 ## Setup Instructions
 
 1. Clone the repository:
    ```
-   git clone <repository-url>
+   git clone https://github.com/gianlucamajor/t-cruzi-epitopes-db.git
    ```
 
 2. Navigate to the project directory:
    ```
-   cd my-bootstrap-project
+   cd t-cruzi-epitopes-db/web-app
    ```
 
 3. Install the dependencies:
    ```
    npm install
    ```
+4. Dev 
+   ```
+   npm run dev
+   ```
 
 ## Usage
+1. Building to production 
+   ```
+   npm run build
+   ```
 
-To start the project, open `src/index.html` in your web browser. You can modify the HTML, CSS, and JavaScript files to customize the application as needed.
-
-## Contributing
-
-Feel free to submit issues or pull requests if you have suggestions or improvements for the project.
