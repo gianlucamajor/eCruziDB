@@ -2,46 +2,9 @@ import { useEffect, useState } from "react";
 import DataTable from "react-data-table-component";
 import type { TableColumn } from "react-data-table-component";
 import type { Epitope } from "../types/Epitope";
+import FeaturesModal from "./FeaturesModal";
+import SearchBar from "./SearchBar";
 
-// Modal component
-function FeaturesModal({ features, onClose }: { features: string[]; onClose: () => void }) {
-  if (!features) return null;
-  return (
-    <div
-      style={{
-        position: "fixed",
-        top: 0, left: 0, right: 0, bottom: 0,
-        background: "rgba(0,0,0,0.5)",
-        zIndex: 1000,
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center"
-      }}
-      onClick={onClose}
-    >
-      <div
-        style={{
-          background: "white",
-          padding: "2rem",
-          borderRadius: "8px",
-          minWidth: "300px",
-          maxWidth: "90vw",
-          maxHeight: "80vh",
-          overflowY: "auto"
-        }}
-        onClick={e => e.stopPropagation()}
-      >
-        <h5>All Features</h5>
-        <ul>
-          {features.map((f, i) => (
-            <li key={i}>{f}</li>
-          ))}
-        </ul>
-        <button className="btn btn-secondary mt-3" onClick={onClose}>Close</button>
-      </div>
-    </div>
-  );
-}
 
 // Main Table component
 function Table() {
@@ -101,26 +64,7 @@ function Table() {
 
   return (
     <div className="container my-5" style={{ maxHeight: "80vh", display: "flex", flexDirection: "column" }}>
-      <div
-        className="input-group"
-        style={{
-          position: "sticky",
-          top: 0,
-          zIndex: 2,
-          background: "white",
-          paddingTop: "1rem",
-          paddingBottom: "1rem",
-        }}
-      >
-        <input
-          type="search"
-          placeholder="Search"
-          className="form-control border-end-0 border rounded-pill"
-          id="example-search-input"
-          onChange={(e) => setSearch(e.target.value)}
-          value={search}
-        />
-      </div>
+      <SearchBar value={search} onChange={setSearch} />
       {error && <div className="alert alert-danger">{error}</div>}
       <div style={{ flex: 1, minHeight: 0 }}>
         <DataTable
