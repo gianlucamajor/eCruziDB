@@ -3,7 +3,9 @@ import DataTable from "react-data-table-component";
 import type { TableColumn } from "react-data-table-component";
 import type { Epitope } from "../types/Epitope";
 import FeaturesModal from "./FeaturesModal";
+import FeaturesCell from "./FeaturesCell";
 import SearchBar from "./SearchBar";
+
 
 
 // Main Table component
@@ -34,32 +36,11 @@ function Table() {
   // Define columns (moved inside component to access setModalFeatures)
   const columns: TableColumn<Epitope>[] = [
     { name: "ID", selector: (row: Epitope) => row.ID ?? "", sortable: true, width: "100px" },
-    { name: "Epitope", selector: (row: Epitope) => row.Epitope ?? "", minWidth: "400px", wrap: true},
+    { name: "Epitope", selector: (row: Epitope) => row.Epitope ?? "", minWidth: "400px", wrap: true },
     { name: "Peptides", selector: (row: Epitope) => row["Number of Peptides"] ?? "", width: "100px", sortable: true },
     { name: "Inserts", selector: (row: Epitope) => row["Number of Inserts"] ?? "", width: "100px", sortable: true },
-    { name: "Genomic Regions", selector: (row: Epitope) => row["Number of Genomic Regions"] ?? "", width: "150px", sortable: true},
-    { 
-      name: "Features", 
-      cell: (row: Epitope) => {
-        if (!row.Features || row.Features.length === 0) return "";
-        const shown = row.Features.slice(0, 5).join(", ");
-        const more = row.Features.length > 5 ? (
-          <span
-            style={{ color: "#007bff", cursor: "pointer", marginLeft: 10, textDecoration: "underline" }}
-            onClick={() => setModalFeatures(row.Features)}
-          >
-            ...and {row.Features.length - 5} more
-          </span>
-        ) : "";
-        return (
-          <span style={{ whiteSpace: "normal" }}>
-            {shown}
-            {more}
-           </span>
-        );
-      },
-      wrap: true 
-    },
+    { name: "Genomic Regions", selector: (row: Epitope) => row["Number of Genomic Regions"] ?? "", width: "150px", sortable: true },
+    { name: "Features", cell: (row: Epitope) => (<FeaturesCell features={row.Features} onShowAll={() => setModalFeatures(row.Features)} />), wrap: true },
   ];
 
   return (
