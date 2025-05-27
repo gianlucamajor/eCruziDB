@@ -18,7 +18,7 @@ function Table() {
   const [peptidesHtml, setPeptidesHtml] = useState<string | null>(null);
 
   useEffect(() => {
-    fetch("/data/epitopes-data.json")
+    fetch("data/epitopes-data.json")
       .then((res) => {
         if (!res.ok) throw new Error("Network response was not ok");
         return res.json();
@@ -38,7 +38,7 @@ function Table() {
   // Define columns (moved inside component to access setModalFeatures)
   const columns: TableColumn<Epitope>[] = [
     { name: "ID", selector: (row: Epitope) => row.ID ?? "", sortable: true, width: "100px" },
-    { name: "Epitope", selector: (row: Epitope) => row.Epitope ?? "", minWidth: "400px", wrap: true },
+    { name: "Epitope", selector: (row: Epitope) => row.Epitope ?? "", width: "400px", wrap: true },
     {
       name: "Peptides",
       selector: (row: Epitope) => row["Number of Peptides"] ?? 0, // for sorting
@@ -46,7 +46,7 @@ function Table() {
         <PeptidesCell
           value={row["Number of Peptides"]}
           id={row.ID}
-          onShow={() => setPeptidesHtml(`/mview/${row.MSA}`)}
+          onShow={() => setPeptidesHtml(`mview/${row.MSA}`)}
         />
       ),
       width: "100px",
