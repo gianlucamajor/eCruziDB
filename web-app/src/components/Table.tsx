@@ -5,15 +5,17 @@ import type { Epitope } from "../types/Epitope";
 import FeaturesModal from "./FeaturesModal";
 import FeaturesCell from "./FeaturesCell";
 import SearchBar from "./SearchBar";
-
-
-
+import PeptidesCell from "./PeptidesCell";
+import PeptidesModal from "./PeptidesModal";
+                             
+                             
 // Main Table component
 function Table() {
   const [data, setData] = useState<Epitope[]>([]);
   const [error, setError] = useState<string | null>(null);
   const [search, setSearch] = useState<string>("");
   const [modalFeatures, setModalFeatures] = useState<string[] | null>(null);
+  const [peptidesHtml, setPeptidesHtml] = useState<string | null>(null);
 
   useEffect(() => {
     fetch("/data/epitopes-data.json")
@@ -37,7 +39,19 @@ function Table() {
   const columns: TableColumn<Epitope>[] = [
     { name: "ID", selector: (row: Epitope) => row.ID ?? "", sortable: true, width: "100px" },
     { name: "Epitope", selector: (row: Epitope) => row.Epitope ?? "", minWidth: "400px", wrap: true },
-    { name: "Peptides", selector: (row: Epitope) => row["Number of Peptides"] ?? "", width: "100px", sortable: true },
+    {
+      name: "Peptides",
+      selector: (row: Epitope) => row["Number of Peptides"] ?? 0, // for sorting
+      cell: (row: Epitope) => (
+        <PeptidesCell
+          value={row["Number of Peptides"]}
+          id={row.ID}
+          onShow={() => setPeptidesHtml(`/mview/${row.MSA}`)}
+        />
+      ),
+      width: "100px",
+      sortable: true,
+    },
     { name: "Inserts", selector: (row: Epitope) => row["Number of Inserts"] ?? "", width: "100px", sortable: true },
     { name: "Genomic Regions", selector: (row: Epitope) => row["Number of Genomic Regions"] ?? "", width: "150px", sortable: true },
     { name: "Features", cell: (row: Epitope) => (<FeaturesCell features={row.Features} onShowAll={() => setModalFeatures(row.Features)} />), wrap: true },
@@ -60,6 +74,9 @@ function Table() {
       </div>
       {modalFeatures && (
         <FeaturesModal features={modalFeatures} onClose={() => setModalFeatures(null)} />
+      )}
+      {peptidesHtml && (
+        <PeptidesModal htmlFile={peptidesHtml} onClose={() => setPeptidesHtml(null)} />
       )}
     </div>
   );
