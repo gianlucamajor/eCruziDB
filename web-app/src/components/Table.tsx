@@ -58,7 +58,7 @@ function Table() {
   ];
 
   return (
-    <div className="container my-5" style={{ maxHeight: "80vh", display: "flex", flexDirection: "column" }}>
+    <div className="container my-5" style={{ maxHeight: "80vh"}}>
       <SearchBar value={search} onChange={setSearch} />
       {error && <div className="alert alert-danger">{error}</div>}
       <div style={{ flex: 1, minHeight: 0 }}>
@@ -70,6 +70,7 @@ function Table() {
           paginationRowsPerPageOptions={[25, 50, 100]}
           fixedHeader
           fixedHeaderScrollHeight="60vh"
+          
         />
       </div>
       {modalFeatures && (
