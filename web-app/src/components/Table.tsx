@@ -7,6 +7,8 @@ import FeaturesCell from "./FeaturesCell";
 import SearchBar from "./SearchBar";
 import PeptidesCell from "./PeptidesCell";
 import PeptidesModal from "./PeptidesModal";
+import GenomicRegionsModal from "./GenomicRegionsModal";
+import { FaLink } from "react-icons/fa"; // Install react-icons if not present
                              
                              
 // Main Table component
@@ -16,6 +18,7 @@ function Table() {
   const [search, setSearch] = useState<string>("");
   const [modalFeatures, setModalFeatures] = useState<string[] | null>(null);
   const [peptidesHtml, setPeptidesHtml] = useState<string | null>(null);
+  const [modalGenomicRegions, setModalGenomicRegions] = useState<{regions: string[], igvUrl?: string} | null>(null);
 
   useEffect(() => {
     fetch("data/epitopes-data.json")
@@ -53,7 +56,32 @@ function Table() {
       sortable: true,
     },
     { name: "Inserts", selector: (row: Epitope) => row["Number of Inserts"] ?? "", width: "100px", sortable: true },
-    { name: "Genomic Regions", selector: (row: Epitope) => row["Number of Genomic Regions"] ?? "", width: "150px", sortable: true },
+    { 
+      name: "Genomic Regions", 
+      selector: (row: Epitope) => row["Number of Genomic Regions"] ?? "", 
+      width: "150px", 
+      sortable: true,
+      cell: (row: Epitope) => (
+        <span>
+          {row["Number of Genomic Regions"] ?? ""}
+          {Array.isArray(row["Genomic Region Locus"]) && row["Genomic Region Locus"].length > 0 && (
+            <button
+              style={{ background: "none", border: "none", marginLeft: 8, cursor: "pointer" }}
+              title="Show Genomic Regions"
+              onClick={e => {
+                e.stopPropagation();
+                setModalGenomicRegions({
+                  regions: row["Genomic Region Locus"],
+                  igvUrl: "http://localhost:8080/igv-webapp/?locus=" + row["Genomic Region Locus"][0] // Replace with your IGV URL logic
+                });
+              }}
+            >
+              <FaLink />
+            </button>
+          )}
+        </span>
+      )
+    },
     { name: "Features", cell: (row: Epitope) => (<FeaturesCell features={row.Features} onShowAll={() => setModalFeatures(row.Features)} />), wrap: true },
   ];
 
@@ -78,6 +106,13 @@ function Table() {
       )}
       {peptidesHtml && (
         <PeptidesModal htmlFile={peptidesHtml} onClose={() => setPeptidesHtml(null)} />
+      )}
+      {modalGenomicRegions && (
+        <GenomicRegionsModal
+          regions={modalGenomicRegions.regions}
+          igvUrl={modalGenomicRegions.igvUrl}
+          onClose={() => setModalGenomicRegions(null)}
+        />
       )}
     </div>
   );
