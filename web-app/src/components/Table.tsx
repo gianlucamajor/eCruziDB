@@ -7,6 +7,8 @@ import FeaturesCell from "./FeaturesCell";
 import SearchBar from "./SearchBar";
 import PeptidesCell from "./PeptidesCell";
 import PeptidesModal from "./PeptidesModal";
+import GenomicRegionsModal from "./GenomicRegionsModal";
+import GenomicRegionsCell from "./GenomicRegionsCell";
                              
                              
 // Main Table component
@@ -16,6 +18,7 @@ function Table() {
   const [search, setSearch] = useState<string>("");
   const [modalFeatures, setModalFeatures] = useState<string[] | null>(null);
   const [peptidesHtml, setPeptidesHtml] = useState<string | null>(null);
+  const [modalGenomicRegions, setModalGenomicRegions] = useState<{regions: string[], igvUrl?: string} | null>(null);
 
   useEffect(() => {
     fetch("data/epitopes-data.json")
@@ -35,6 +38,8 @@ function Table() {
       (epitope.Features?.some(feature => feature.toLowerCase().includes(search.toLowerCase())) ?? false)
   );
 
+  const igvBaseUrl = import.meta.env.VITE_IGV_BASE_URL;
+
   // Define columns (moved inside component to access setModalFeatures)
   const columns: TableColumn<Epitope>[] = [
     { name: "ID", selector: (row: Epitope) => row.ID ?? "", sortable: true, width: "100px" },
@@ -53,12 +58,29 @@ function Table() {
       sortable: true,
     },
     { name: "Inserts", selector: (row: Epitope) => row["Number of Inserts"] ?? "", width: "100px", sortable: true },
-    { name: "Genomic Regions", selector: (row: Epitope) => row["Number of Genomic Regions"] ?? "", width: "150px", sortable: true },
+    { 
+      name: "Genomic Regions", 
+      selector: (row: Epitope) => row["Number of Genomic Regions"] ?? "", 
+      width: "150px", 
+      sortable: true,
+      cell: (row: Epitope) => (
+        <GenomicRegionsCell
+          count={row["Number of Genomic Regions"] ?? ""}
+          regions={row["Genomic Region Locus"] ?? []}
+          onShow={() => {
+            setModalGenomicRegions({
+              regions: row["Genomic Region Locus"],
+              igvUrl: `${igvBaseUrl}/igv-webapp/?locus=${row["Genomic Region Locus"][0]}`
+            });
+          }}
+        />
+      )
+    },
     { name: "Features", cell: (row: Epitope) => (<FeaturesCell features={row.Features} onShowAll={() => setModalFeatures(row.Features)} />), wrap: true },
   ];
 
   return (
-    <div className="container my-5" style={{ maxHeight: "80vh", display: "flex", flexDirection: "column" }}>
+    <div className="container my-5" style={{ maxHeight: "80vh"}}>
       <SearchBar value={search} onChange={setSearch} />
       {error && <div className="alert alert-danger">{error}</div>}
       <div style={{ flex: 1, minHeight: 0 }}>
@@ -70,6 +92,7 @@ function Table() {
           paginationRowsPerPageOptions={[25, 50, 100]}
           fixedHeader
           fixedHeaderScrollHeight="60vh"
+          
         />
       </div>
       {modalFeatures && (
@@ -77,6 +100,13 @@ function Table() {
       )}
       {peptidesHtml && (
         <PeptidesModal htmlFile={peptidesHtml} onClose={() => setPeptidesHtml(null)} />
+      )}
+      {modalGenomicRegions && (
+        <GenomicRegionsModal
+          regions={modalGenomicRegions.regions}
+          igvUrl={modalGenomicRegions.igvUrl}
+          onClose={() => setModalGenomicRegions(null)}
+        />
       )}
     </div>
   );

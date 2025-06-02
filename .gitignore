@@ -12,6 +12,10 @@ dist
 dist-ssr
 *.local
 
+# data files
+mview
+igv-webapp
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
