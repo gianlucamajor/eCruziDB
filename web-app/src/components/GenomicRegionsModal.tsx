@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 type GenomicRegionsModalProps = {
   regions: string[]; // List of genomic regions
   onClose: () => void;
@@ -5,6 +7,13 @@ type GenomicRegionsModalProps = {
 };
 
 function GenomicRegionsModal({ regions, onClose, igvUrl }: GenomicRegionsModalProps) {
+  const igvBaseUrl = import.meta.env.VITE_IGV_BASE_URL || "http://localhost:8080"; // fallback if not set
+  const [currentIgvUrl, setCurrentIgvUrl] = useState<string | undefined>(igvUrl);
+
+  const handleRegionClick = (region: string) => {
+    setCurrentIgvUrl(`${igvBaseUrl}/igv-webapp/?locus=${encodeURIComponent(region)}`);
+  };
+
   return (
     <div
       style={{
@@ -39,22 +48,46 @@ function GenomicRegionsModal({ regions, onClose, igvUrl }: GenomicRegionsModalPr
               <tr>
                 <th>#</th>
                 <th>Region</th>
+                <th></th>
               </tr>
             </thead>
             <tbody>
-              {regions.map((region, idx) => (
-                <tr key={idx}>
-                  <td>{idx + 1}</td>
-                  <td>{region}</td>
-                </tr>
-              ))}
+              {regions.map((region, idx) => {
+                let isActive = false;
+                if (currentIgvUrl) {
+                  const locusMatch = currentIgvUrl.match(/[?&]locus=([^&]+)/);
+                  if (locusMatch && decodeURIComponent(locusMatch[1]) === region) {
+                    isActive = true;
+                  }
+                }
+                const cellStyle = isActive ? { background: "#f0f0f0" } : undefined;
+                return (
+                  <tr key={idx}>
+                    <td style={cellStyle}>{idx + 1}</td>
+                    <td style={cellStyle}>
+                      <a
+                        href="#"
+                        style={{ textDecoration: "underline", color: "#007bff", cursor: "pointer" }}
+                        title="Show this region in IGV"
+                        onClick={e => {
+                          e.preventDefault();
+                          handleRegionClick(region);
+                        }}
+                      >
+                        {region}
+                      </a>
+                    </td>
+                    <td style={cellStyle}></td>
+                  </tr>
+                );
+              })}
             </tbody>
           </table>
         </div>
         <div style={{ margin: "1rem 0" }}>
           <h6>IGV Browser</h6>
           <iframe
-            src={igvUrl}
+            src={currentIgvUrl}
             title="IGV Browser"
             style={{ width: "100%", height: "60vh", border: "1px solid #ccc" }}
           />

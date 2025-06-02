@@ -8,7 +8,7 @@ import SearchBar from "./SearchBar";
 import PeptidesCell from "./PeptidesCell";
 import PeptidesModal from "./PeptidesModal";
 import GenomicRegionsModal from "./GenomicRegionsModal";
-import { FaLink } from "react-icons/fa"; // Install react-icons if not present
+import GenomicRegionsCell from "./GenomicRegionsCell";
                              
                              
 // Main Table component
@@ -38,6 +38,8 @@ function Table() {
       (epitope.Features?.some(feature => feature.toLowerCase().includes(search.toLowerCase())) ?? false)
   );
 
+  const igvBaseUrl = import.meta.env.VITE_IGV_BASE_URL;
+
   // Define columns (moved inside component to access setModalFeatures)
   const columns: TableColumn<Epitope>[] = [
     { name: "ID", selector: (row: Epitope) => row.ID ?? "", sortable: true, width: "100px" },
@@ -62,24 +64,16 @@ function Table() {
       width: "150px", 
       sortable: true,
       cell: (row: Epitope) => (
-        <span>
-          {row["Number of Genomic Regions"] ?? ""}
-          {Array.isArray(row["Genomic Region Locus"]) && row["Genomic Region Locus"].length > 0 && (
-            <button
-              style={{ background: "none", border: "none", marginLeft: 8, cursor: "pointer" }}
-              title="Show Genomic Regions"
-              onClick={e => {
-                e.stopPropagation();
-                setModalGenomicRegions({
-                  regions: row["Genomic Region Locus"],
-                  igvUrl: "http://localhost:8080/igv-webapp/?locus=" + row["Genomic Region Locus"][0] // Replace with your IGV URL logic
-                });
-              }}
-            >
-              <FaLink />
-            </button>
-          )}
-        </span>
+        <GenomicRegionsCell
+          count={row["Number of Genomic Regions"] ?? ""}
+          regions={row["Genomic Region Locus"] ?? []}
+          onShow={() => {
+            setModalGenomicRegions({
+              regions: row["Genomic Region Locus"],
+              igvUrl: `${igvBaseUrl}/igv-webapp/?locus=${row["Genomic Region Locus"][0]}`
+            });
+          }}
+        />
       )
     },
     { name: "Features", cell: (row: Epitope) => (<FeaturesCell features={row.Features} onShowAll={() => setModalFeatures(row.Features)} />), wrap: true },
