@@ -18,11 +18,7 @@ function PeptidesCell({ value, id, onShow }: PeptidesCellProps) {
           }}
         >
           {/* Simple icon (🔗) or use a library icon */}
-          <svg width="16" height="16" fill="currentColor" style={{ verticalAlign: "middle" }} viewBox="0 0 16 16">
-            <path d="M6.354 5.5H4a2.5 2.5 0 0 0 0 5h2.354a.5.5 0 0 1 0 1H4a3.5 3.5 0 0 1 0-7h2.354a.5.5 0 0 1 0 1z"/>
-            <path d="M9.646 10.5H12a2.5 2.5 0 0 0 0-5H9.646a.5.5 0 0 1 0-1H12a3.5 3.5 0 0 1 0 7H9.646a.5.5 0 0 1 0-1z"/>
-            <path d="M5.5 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4A.5.5 0 0 1 5.5 8z"/>
-          </svg>
+            <span style={{ fontSize: 14, verticalAlign: "middle" }} role="img" aria-label="link">🔗</span>
         </span>
       )}
     </span>
