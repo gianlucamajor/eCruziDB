@@ -11,7 +11,7 @@ function App() {
           T.cruzi Epitopes Database
         </h1>
         <p className="lead text-secondary mb-0">
-          Epitopes identified on sequence from the phage display assay.
+          Epitopes identified from phage display assay.
         </p>
       </header>
       <div style={{ height: "calc(100vh - 110px)", overflow: "auto" }}>
