@@ -7,7 +7,7 @@ type Props = {
 };
 
 const GenomicRegionsCell: React.FC<Props> = ({ count, regions, onShow }) => (
-  <span>
+  <span className="genomic-regions-col-cell" style={{ display: "block", width: "100%" }}>
     {count}
     {Array.isArray(regions) && regions.length > 0 && (
       <button

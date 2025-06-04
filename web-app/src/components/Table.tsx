@@ -9,8 +9,8 @@ import PeptidesCell from "./PeptidesCell";
 import PeptidesModal from "./PeptidesModal";
 import GenomicRegionsModal from "./GenomicRegionsModal";
 import GenomicRegionsCell from "./GenomicRegionsCell";
-                             
-                             
+
+
 // Main Table component
 function Table() {
   const [data, setData] = useState<Epitope[]>([]);
@@ -18,7 +18,7 @@ function Table() {
   const [search, setSearch] = useState<string>("");
   const [modalFeatures, setModalFeatures] = useState<string[] | null>(null);
   const [peptidesHtml, setPeptidesHtml] = useState<string | null>(null);
-  const [modalGenomicRegions, setModalGenomicRegions] = useState<{regions: string[], igvUrl?: string} | null>(null);
+  const [modalGenomicRegions, setModalGenomicRegions] = useState<{ regions: string[], igvUrl?: string } | null>(null);
 
   useEffect(() => {
     fetch("data/epitopes-data.json")
@@ -43,7 +43,17 @@ function Table() {
   // Define columns (moved inside component to access setModalFeatures)
   const columns: TableColumn<Epitope>[] = [
     { name: "ID", selector: (row: Epitope) => row.ID ?? "", sortable: true, width: "100px" },
-    { name: "Epitope", selector: (row: Epitope) => row.Epitope ?? "", width: "400px", wrap: true },
+    {
+      name: "Epitope",
+      selector: (row: Epitope) => row.Epitope ?? "",
+      width: "400px",
+      wrap: true,
+      cell: (row: Epitope) => (
+        <span className="epitope-col-cell" style={{ display: "block", width: "100%" }}>
+          {row.Epitope ?? ""}
+        </span>
+      ),
+    },
     {
       name: "Peptides",
       selector: (row: Epitope) => row["Number of Peptides"] ?? 0, // for sorting
@@ -57,11 +67,21 @@ function Table() {
       width: "100px",
       sortable: true,
     },
-    { name: "Inserts", selector: (row: Epitope) => row["Number of Inserts"] ?? "", width: "100px", sortable: true },
-    { 
-      name: "Genomic Regions", 
-      selector: (row: Epitope) => row["Number of Genomic Regions"] ?? "", 
-      width: "150px", 
+    {
+      name: "Inserts",
+      selector: (row: Epitope) => row["Number of Inserts"] ?? "",
+      width: "100px",
+      sortable: true,
+      cell: (row: Epitope) => (
+        <span className="inserts-col-cell" style={{ display: "block", width: "100%" }}>
+          {row["Number of Inserts"] ?? ""}
+        </span>
+      ),
+        },
+        {
+      name: "Genomic Regions",
+      selector: (row: Epitope) => row["Number of Genomic Regions"] ?? "",
+      width: "150px",
       sortable: true,
       cell: (row: Epitope) => (
         <GenomicRegionsCell
@@ -80,10 +100,10 @@ function Table() {
   ];
 
   return (
-    <div className="container my-5" style={{ maxHeight: "80vh"}}>
+    <div className="container my-5 workspace" style={{ maxHeight: "80vh" }}>
       <SearchBar value={search} onChange={setSearch} />
       {error && <div className="alert alert-danger">{error}</div>}
-      <div style={{ flex: 1, minHeight: 0 }}>
+      <div className="epitopes-data-table" style={{ flex: 1, minHeight: 0 }}>
         <DataTable
           columns={columns}
           data={filteredData}
@@ -92,7 +112,7 @@ function Table() {
           paginationRowsPerPageOptions={[25, 50, 100]}
           fixedHeader
           fixedHeaderScrollHeight="60vh"
-          
+
         />
       </div>
       {modalFeatures && (

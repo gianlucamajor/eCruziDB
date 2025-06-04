@@ -21,7 +21,7 @@ function SearchBar({ value, onChange }: SearchBarProps) {
         type="search"
         placeholder="Search"
         className="form-control border-end-0 border rounded-pill"
-        id="example-search-input"
+        id="search-input"
         onChange={(e) => onChange(e.target.value)}
         value={value}
       />
