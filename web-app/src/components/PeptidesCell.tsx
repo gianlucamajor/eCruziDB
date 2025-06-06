@@ -6,7 +6,8 @@ type PeptidesCellProps = {
 
 function PeptidesCell({ value, id, onShow }: PeptidesCellProps) {
   return (
-    <span>
+    
+    <span className="peptides-col-cell" style={{ display: "block", width: "100%" }}>
       {value}
       {value > 1 && (
         <span
