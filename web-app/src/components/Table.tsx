@@ -42,9 +42,22 @@ function Table() {
 
   // Define columns (moved inside component to access setModalFeatures)
   const columns: TableColumn<Epitope>[] = [
-    { name: "ID", selector: (row: Epitope) => row.ID ?? "", sortable: true, width: "100px" },
     {
-      name: "Epitope",
+      name: (
+        <span title="Unique identifier for the epitope" style={{ cursor: "help" }}>
+          ID
+        </span>
+      ),
+      selector: (row: Epitope) => row.ID ?? "",
+      sortable: true,
+      width: "100px",
+    },
+    {
+      name: (
+        <span title="Amino acid sequence identified as an epitope" style={{ cursor: "help" }}>
+          Epitope
+        </span>
+      ),
       selector: (row: Epitope) => row.Epitope ?? "",
       width: "400px",
       wrap: true,
@@ -55,8 +68,12 @@ function Table() {
       ),
     },
     {
-      name: "Peptides",
-      selector: (row: Epitope) => row["Number of Peptides"] ?? 0, // for sorting
+      name: (
+        <span title="Number of peptides associated with this epitope and link to show their MSA" style={{ cursor: "help" }}>
+          Peptides
+        </span>
+      ),
+      selector: (row: Epitope) => row["Number of Peptides"] ?? 0,
       cell: (row: Epitope) => (
         <PeptidesCell
           value={row["Number of Peptides"]}
@@ -68,7 +85,11 @@ function Table() {
       sortable: true,
     },
     {
-      name: "Inserts",
+      name: (
+        <span title="Number of inserts (nucleotides sequences) for this epitope" style={{ cursor: "help" }}>
+          Inserts
+        </span>
+      ),
       selector: (row: Epitope) => row["Number of Inserts"] ?? "",
       width: "100px",
       sortable: true,
@@ -77,9 +98,13 @@ function Table() {
           {row["Number of Inserts"] ?? ""}
         </span>
       ),
-        },
-        {
-      name: "Genomic Regions",
+    },
+    {
+      name: (
+        <span title="Number and loci of genomic regions associated (mapped by inserts) with this epitope" style={{ cursor: "help" }}>
+          Genomic Regions
+        </span>
+      ),
       selector: (row: Epitope) => row["Number of Genomic Regions"] ?? "",
       width: "150px",
       sortable: true,
@@ -94,9 +119,19 @@ function Table() {
             });
           }}
         />
-      )
+      ),
     },
-    { name: "Features", cell: (row: Epitope) => (<FeaturesCell features={row.Features} onShowAll={() => setModalFeatures(row.Features)} />), wrap: true },
+    {
+      name: (
+        <span title="Features annotations associated with this epitope" style={{ cursor: "help" }}>
+          Annotations
+        </span>
+      ),
+      cell: (row: Epitope) => (
+        <FeaturesCell features={row.Features} onShowAll={() => setModalFeatures(row.Features)} />
+      ),
+      wrap: true,
+    },
   ];
 
   return (
