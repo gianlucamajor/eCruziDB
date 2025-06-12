@@ -135,7 +135,7 @@ function Table() {
   ];
 
   return (
-    <div className="container my-5 workspace" style={{ maxHeight: "80vh" }}>
+    <div className="container my-2 workspace" style={{ maxHeight: "80vh" }}>
       <SearchBar value={search} onChange={setSearch} />
       {error && <div className="alert alert-danger">{error}</div>}
       <div className="epitopes-data-table" style={{ flex: 1, minHeight: 0 }}>
