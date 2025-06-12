@@ -28,6 +28,14 @@ const Menu = ({ setStepsEnabled, onDownloadClick }: MenuProps) => (
             Start Tour
           </Nav.Link>
           <Nav.Link as={Link} to="/about">About</Nav.Link>
+
+          <Nav.Link as={Link} to="/methodology">Methodology</Nav.Link>
+          <Nav.Link as={Link} to="/metrics">Metrics</Nav.Link>
+          <Nav.Link as={Link} to="/release">Release</Nav.Link>
+          <Nav.Link as={Link} to="/team">Team</Nav.Link>
+          <Nav.Link as={Link} to="/funding">Funding</Nav.Link>
+          <Nav.Link as={Link} to="/help">Help</Nav.Link>
+          
           <Nav.Link
             href="#"
             onClick={e => {
@@ -37,20 +45,6 @@ const Menu = ({ setStepsEnabled, onDownloadClick }: MenuProps) => (
           >
             Downloads
           </Nav.Link>
-          <NavDropdown title="More" id="nav-dropdown-more">
-            <NavDropdown.Item
-              href="#"
-              onClick={e => {
-                e.preventDefault();
-                setStepsEnabled(true);
-              }}
-            >
-              Start Tour
-            </NavDropdown.Item>
-            <NavDropdown.Item as={Link} to="/contact">
-              Contact
-            </NavDropdown.Item>
-          </NavDropdown>
         </Nav>
       </Navbar.Collapse>
     </Container>
