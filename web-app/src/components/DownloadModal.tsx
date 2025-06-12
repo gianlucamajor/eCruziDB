@@ -8,22 +8,22 @@ type DownloadModalProps = {
 
 const files = [
   {
-    name: "epitopes-db.fasta",
+    name: "epitopes-db.fasta.gz",
     description: "List all T.cruzi epitope sequences in FASTA format",
-    size: "335K",
-    path: "data/epitopes-db.fasta",
+    size: "185K",
+    path: "data/epitopes-db.fasta.gz",
   },
 {
-    name: "t-cruzi-all-peptides.fasta",
+    name: "t-cruzi-all-peptides.fasta.gz",
     description: "List all T.cruzi peptide sequences in FASTA format",
-    size: "3.5M",
-    path: "data/t-cruzi-all-peptides.fasta",
+    size: "1020K",
+    path: "data/t-cruzi-all-peptides.fasta.gz",
   },
   {
-    name: "all-inserts.fastq",
+    name: "all-inserts.fastq.gz",
     description: "All phage display inserts (nucleotides) in FASTQ format",
-    size: "546M",
-    path: "data/all-inserts-ms-mapped-BrA4.fastq",
+    size: "34M",
+    path: "data/all-inserts-ms-mapped-BrA4.fastq.gz",
   },
 ];
 
