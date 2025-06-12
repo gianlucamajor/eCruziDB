@@ -18,6 +18,9 @@ igv-webapp
 *.fasta
 *.fastq
 
+*.fasta.gz 
+*.fastq.gz 
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
