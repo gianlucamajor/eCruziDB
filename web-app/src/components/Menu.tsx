@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import { FaHome } from 'react-icons/fa';
 
 type MenuProps = {
@@ -27,14 +26,13 @@ const Menu = ({ setStepsEnabled, onDownloadClick }: MenuProps) => (
           >
             Start Tour
           </Nav.Link>
-          <Nav.Link as={Link} to="/about">About</Nav.Link>
-
+          {/* <Nav.Link as={Link} to="/about">About</Nav.Link>
           <Nav.Link as={Link} to="/methodology">Methodology</Nav.Link>
           <Nav.Link as={Link} to="/metrics">Metrics</Nav.Link>
           <Nav.Link as={Link} to="/release">Release</Nav.Link>
           <Nav.Link as={Link} to="/team">Team</Nav.Link>
           <Nav.Link as={Link} to="/funding">Funding</Nav.Link>
-          <Nav.Link as={Link} to="/help">Help</Nav.Link>
+          <Nav.Link as={Link} to="/help">Help</Nav.Link> */}
           
           <Nav.Link
             href="#"

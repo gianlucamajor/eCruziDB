@@ -8,29 +8,29 @@ type DownloadModalProps = {
 
 const files = [
   {
-    name: "epitopes-db.fasta.gz",
-    description: "List all T.cruzi epitope sequences in FASTA format",
+    name: "epitopes-db.fasta.zip",
+    description: "List all epitope sequences in FASTA format",
     size: "185K",
-    path: "data/epitopes-db.fasta.gz",
+    path: "data/epitopes-db.fasta.zip",
   },
 {
-    name: "t-cruzi-all-peptides.fasta.gz",
-    description: "List all T.cruzi peptide sequences in FASTA format",
+    name: "t-cruzi-all-peptides.fasta.zip",
+    description: "List all peptide sequences in FASTA format",
     size: "1020K",
-    path: "data/t-cruzi-all-peptides.fasta.gz",
+    path: "data/t-cruzi-all-peptides.fasta.zip",
   },
   {
-    name: "all-inserts.fastq.gz",
+    name: "all-inserts-ms-mapped-BrA4.fastq.zip",
     description: "All phage display inserts (nucleotides) in FASTQ format",
     size: "34M",
-    path: "data/all-inserts-ms-mapped-BrA4.fastq.gz",
+    path: "data/all-inserts-ms-mapped-BrA4.fastq.zip",
   },
 ];
 
 const DownloadModal = ({ show, onHide }: DownloadModalProps) => (
-  <Modal show={show} onHide={onHide} centered size="lg">
+  <Modal show={show} onHide={onHide} centered size="xl">
     <Modal.Header closeButton>
-      <Modal.Title>Downloads</Modal.Title>
+      <Modal.Title>T.cruzi sequences Downloads</Modal.Title>
     </Modal.Header>
     <Modal.Body>
       <table className="table table-bordered mb-0">
