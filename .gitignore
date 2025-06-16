@@ -15,6 +15,12 @@ dist-ssr
 # data files
 mview
 igv-webapp
+*.fasta
+*.fastq
+*.fasta.zip
+*.fastq.zip
+*.fasta.gz
+*.fastq.gz 
 
 # Editor directories and files
 .vscode/*
