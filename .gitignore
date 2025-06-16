@@ -17,8 +17,9 @@ mview
 igv-webapp
 *.fasta
 *.fastq
-
-*.fasta.gz 
+*.fasta.zip
+*.fastq.zip
+*.fasta.gz
 *.fastq.gz 
 
 # Editor directories and files
