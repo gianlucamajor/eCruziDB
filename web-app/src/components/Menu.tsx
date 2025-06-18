@@ -6,6 +6,8 @@ import { FaHome } from 'react-icons/fa';
 
 type MenuProps = {
   setStepsEnabled: (enabled: boolean) => void;
+  onAboutClick: (enabled: boolean) => void;
+  onDownloadClick: (enabled: boolean) => void;
 };
 
 const Menu = ({ setStepsEnabled}: MenuProps) => (

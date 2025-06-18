@@ -30,6 +30,8 @@ function App() {
           <Router basename={import.meta.env.BASE_URL}>
             <Menu
               setStepsEnabled={setStepsEnabled}
+              onAboutClick={() => setShowAbout(true)}
+              onDownloadClick={() => setShowDownload(true)}
             />
             <Routes>
               <Route path="/" element={null} />
