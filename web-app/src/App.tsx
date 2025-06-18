@@ -9,11 +9,13 @@ import "intro.js/introjs.css";
 import { Steps } from "intro.js-react";
 import { useTour } from "./hooks/useTour";
 import DownloadModal from "./components/DownloadModal";
+import AboutModal from "./components/AboutModal";
 
 
 function App() {
   const { stepsEnabled, setStepsEnabled, steps } = useTour();
   const [showDownload, setShowDownload] = useState(false);
+  const [showAbout, setShowAbout] = useState(false);
 
   return (
     <div style={{ width: "100vw", height: "100vh", overflow: "hidden" }}>
@@ -27,7 +29,11 @@ function App() {
         
         <div>
         <Router basename={import.meta.env.BASE_URL}>
-          <Menu setStepsEnabled={setStepsEnabled} onDownloadClick={() => setShowDownload(true)} />
+          <Menu setStepsEnabled={setStepsEnabled}
+              onDownloadClick={() => setShowDownload(true)}
+              onAboutClick={() => setShowAbout(true)}
+           />
+            
             <Routes>
             <Route path="/" element={null} />
             <Route path="/about" element={null} />
@@ -47,6 +53,7 @@ function App() {
       />
 
       <DownloadModal show={showDownload} onHide={() => setShowDownload(false)} />
+      <AboutModal show={showAbout} onHide={() => setShowAbout(false)} />
     </div>
   );
 }
