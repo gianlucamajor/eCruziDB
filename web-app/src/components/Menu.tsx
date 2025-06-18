@@ -6,10 +6,9 @@ import { FaHome } from 'react-icons/fa';
 
 type MenuProps = {
   setStepsEnabled: (enabled: boolean) => void;
-  onDownloadClick: () => void;
 };
 
-const Menu = ({ setStepsEnabled, onDownloadClick }: MenuProps) => (
+const Menu = ({ setStepsEnabled}: MenuProps) => (
   <Navbar bg="light" expand="lg">
     <Container>
       <Navbar.Collapse id="main-navbar-nav">
@@ -26,23 +25,14 @@ const Menu = ({ setStepsEnabled, onDownloadClick }: MenuProps) => (
           >
             Start Tour
           </Nav.Link>
-          {/* <Nav.Link as={Link} to="/about">About</Nav.Link>
-          <Nav.Link as={Link} to="/methodology">Methodology</Nav.Link>
+          <Nav.Link as={Link} to="/about">About</Nav.Link>
+          <Nav.Link as={Link} to="/downloads">Downloads</Nav.Link>          
+          {/* <Nav.Link as={Link} to="/methodology">Methodology</Nav.Link>
           <Nav.Link as={Link} to="/metrics">Metrics</Nav.Link>
           <Nav.Link as={Link} to="/release">Release</Nav.Link>
           <Nav.Link as={Link} to="/team">Team</Nav.Link>
           <Nav.Link as={Link} to="/funding">Funding</Nav.Link>
-          <Nav.Link as={Link} to="/help">Help</Nav.Link> */}
-          
-          <Nav.Link
-            href="#"
-            onClick={e => {
-              e.preventDefault();
-              onDownloadClick();
-            }}
-          >
-            Downloads
-          </Nav.Link>
+          <Nav.Link as={Link} to="/help">Help</Nav.Link>  */}
         </Nav>
       </Navbar.Collapse>
     </Container>

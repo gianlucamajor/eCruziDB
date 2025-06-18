@@ -8,12 +8,14 @@ import Menu from './components/Menu';
 import "intro.js/introjs.css";
 import { Steps } from "intro.js-react";
 import { useTour } from "./hooks/useTour";
-import DownloadModal from "./components/DownloadModal";
+import AboutModalRoute from "./components/modals/AboutModalRoute";
+import DownloadModalRoute from "./components/modals/DownloadModalRoute";
 
 
 function App() {
   const { stepsEnabled, setStepsEnabled, steps } = useTour();
   const [showDownload, setShowDownload] = useState(false);
+  const [showAbout, setShowAbout] = useState(false);
 
   return (
     <div style={{ width: "100vw", height: "100vh", overflow: "hidden" }}>
@@ -22,20 +24,23 @@ function App() {
           T.cruzi Epitopes Database
         </h1>
         <p className="lead text-secondary mb-0">
-          Epitopes identified from phage display assay.
+          Epitopes identified from phage display data.
         </p>
-        
         <div>
-        <Router basename={import.meta.env.BASE_URL}>
-          <Menu setStepsEnabled={setStepsEnabled} onDownloadClick={() => setShowDownload(true)} />
+          <Router basename={import.meta.env.BASE_URL}>
+            <Menu
+              setStepsEnabled={setStepsEnabled}
+            />
             <Routes>
-            <Route path="/" element={null} />
-            <Route path="/about" element={null} />
+              <Route path="/" element={null} />
+              <Route path="/about" element={null} />
+              <Route path="/downloads" element={null} />
             </Routes>
-      </Router>
-      </div>
+            <AboutModalRoute show={showAbout} onHide={() => setShowAbout(false)} />
+            <DownloadModalRoute show={showDownload} onHide={() => setShowDownload(false)} />
+          </Router>
+        </div>
       </header>
-      
       <div style={{ height: "calc(100vh - 110px)", overflow: "auto" }}>
         <Table />
       </div>
@@ -45,10 +50,8 @@ function App() {
         initialStep={0}
         onExit={() => setStepsEnabled(false)}
       />
-
-      <DownloadModal show={showDownload} onHide={() => setShowDownload(false)} />
     </div>
   );
 }
 
-export default App
+export default App;
