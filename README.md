@@ -67,4 +67,20 @@ t-cruzi-epitopes-db
    ```
    npm run build
    ```
+## Usage on LBI
+<p>This is required to enable show modal by urls. e.g /about or /downloads.</p>
+<p>Considering the production url as: https://projetos.lbi.iq.usp.br/trypanosoma/epitopes-db/</p>
 
+1. create a .htacces on trypanosoma/epitopes-db directory and add the followed lines:
+   ```
+   RewriteEngine On
+   RewriteBase /trypanosoma/epitopes-db/
+   RewriteRule ^index\.html$ - [L]
+   RewriteCond %{REQUEST_FILENAME} !-f
+   RewriteCond %{REQUEST_FILENAME} !-d
+   RewriteRule . /trypanosoma/epitopes-db/index.html [L]
+   ```
+2. Give the required permissions 
+   ```
+   chmod 444 .htaccess
+   ```
