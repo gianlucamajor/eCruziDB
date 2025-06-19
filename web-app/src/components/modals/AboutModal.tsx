@@ -9,7 +9,7 @@ type AboutModalProps = {
 const AboutModal = ({ show, onHide }: AboutModalProps) => (
   <Modal show={show} onHide={onHide} centered size="xl">
     <Modal.Header closeButton>
-      <Modal.Title>About T.cruzi Epitopes Database</Modal.Title>
+      <Modal.Title>About eCruziDB</Modal.Title>
     </Modal.Header>
     <Modal.Body>
       <p>

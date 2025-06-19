@@ -1,4 +1,4 @@
-# Trypanosoma cruzi Epitopes Database Project
+# Trypanosoma cruzi Epitopes Database Project (eCruziDB)
 
 This project is database of epitopes from T.cruzi coming phage display assay.
 
