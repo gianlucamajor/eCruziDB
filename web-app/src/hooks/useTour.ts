@@ -10,7 +10,7 @@ export function useTour() {
       setTimeout(() => {
         setStepsEnabled(true);
         localStorage.setItem("tourShown", "true");
-      }, 500); // 500ms delay, adjust as needed
+      }, 2000); // 2000ms delay, adjust as needed
     }
   }, []);
 
