@@ -82,5 +82,5 @@ t-cruzi-epitopes-db
    ```
 2. Give the required permissions 
    ```
-   chmod 444 .htaccess
+   chmod 744 .htaccess
    ```
