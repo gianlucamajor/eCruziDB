@@ -30,7 +30,7 @@ const files = [
 const DownloadModal = ({ show, onHide }: DownloadModalProps) => (
   <Modal show={show} onHide={onHide} centered size="xl">
     <Modal.Header closeButton>
-      <Modal.Title>T.cruzi sequences Downloads</Modal.Title>
+      <Modal.Title>eCruziDB Downloads</Modal.Title>
     </Modal.Header>
     <Modal.Body>
       <table className="table table-bordered mb-0">
