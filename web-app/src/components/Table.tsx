@@ -147,7 +147,8 @@ function Table() {
           paginationRowsPerPageOptions={[25, 50, 100]}
           fixedHeader
           fixedHeaderScrollHeight="60vh"
-
+          defaultSortFieldId={4} // Inserts column (see note below)
+          defaultSortAsc={false} // Descending order
         />
       </div>
       {modalFeatures && (
