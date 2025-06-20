@@ -12,6 +12,9 @@ import AboutModalRoute from "./components/modals/AboutModalRoute";
 import DownloadModalRoute from "./components/modals/DownloadModalRoute";
 import FundingModalRoute from "./components/modals/FundingModalRoute";
 import TeamModalRoute from "./components/modals/TeamModalRoute";
+import MetricsModalRoute from "./components/modals/MetricsModalRoute";
+import ReleaseModalRoute from "./components/modals/ReleaseModalRoute";
+import ContactModalRoute from "./components/modals/ContactModalRoute";
 
 
 function App() {
@@ -38,6 +41,10 @@ function App() {
               onDownloadClick={() => setShowDownload(true)}
               onFundingClick={() => setShowFunding(true)}
               onTeamClick={() => setShowTeam(true)}
+              onMetricsClick={() => setShowFunding(true)}
+              onReleaseClick={() => setShowFunding(true)}
+              onContactClick={() => setShowFunding(true)}
+            
             />
             <Routes>
               <Route path="/" element={null} />
@@ -50,6 +57,9 @@ function App() {
             <DownloadModalRoute show={showDownload} onHide={() => setShowDownload(false)} />
             <FundingModalRoute show={showFunding} onHide={() => setShowFunding(false)} />
             <TeamModalRoute show={showTeam} onHide={() => setShowTeam(false)} />
+            <MetricsModalRoute show={showFunding} onHide={() => setShowFunding(false)} />          
+            <ReleaseModalRoute show={showFunding} onHide={() => setShowFunding(false)} />
+            <ContactModalRoute show={showFunding} onHide={() => setShowFunding(false)} />
           </Router>
         </div>
       </header>
