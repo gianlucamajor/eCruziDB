@@ -4,9 +4,15 @@ type GenomicRegionsModalProps = {
   regions: string[]; // List of genomic regions
   onClose: () => void;
   igvUrl?: string; // Optional: URL for IGV browser
+  epitopeInfo?: {
+    id: string;
+    epitope: string;
+    numberOfPeptides: number;
+    numberOfInserts: number;
+  };
 };
 
-function GenomicRegionsModal({ regions, onClose, igvUrl }: GenomicRegionsModalProps) {
+function GenomicRegionsModal({ regions, onClose, igvUrl, epitopeInfo }: GenomicRegionsModalProps) {
   const igvBaseUrl = import.meta.env.VITE_IGV_BASE_URL || "http://localhost:8080"; // fallback if not set
   const [currentIgvUrl, setCurrentIgvUrl] = useState<string | undefined>(igvUrl);
 
@@ -41,8 +47,23 @@ function GenomicRegionsModal({ regions, onClose, igvUrl }: GenomicRegionsModalPr
         }}
         onClick={e => e.stopPropagation()}
       >
-        <h5>Genomic Regions</h5>
-        <div style={{ maxHeight: "200px", overflowY: "auto", marginBottom: "1rem", fontSize: "0.85rem" }}>
+        <h5>Epitope Genomic Regions</h5>
+        <div style={{ 
+          marginBottom: "0.5rem", 
+          fontSize: "0.95em",
+          background: "#fffbe6",
+          border: "1px solid #ffe58f",
+          borderRadius: "4px",
+          padding: "0.5rem"
+        }}>
+          <span style={{ fontWeight: 500 }}>
+            Epitope: {epitopeInfo?.epitope ?? "-"} |{" "}
+            ID: {epitopeInfo?.id ?? "-"} |{" "}
+            Peptides: {epitopeInfo?.numberOfPeptides ?? "-"} |{" "}
+            Inserts: {epitopeInfo?.numberOfInserts ?? "-"}
+          </span>
+        </div>
+        <div style={{ maxHeight: "150px", overflowY: "auto", marginBottom: "1rem", fontSize: "0.85rem" }}>
           <table className="table table-sm mb-0">
             <thead>
               <tr>
@@ -85,7 +106,6 @@ function GenomicRegionsModal({ regions, onClose, igvUrl }: GenomicRegionsModalPr
           </table>
         </div>
         <div style={{ margin: "1rem 0" }}>
-          <h6>IGV Browser</h6>
           <iframe
             src={currentIgvUrl}
             title="IGV Browser"
