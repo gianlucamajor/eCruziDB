@@ -8,6 +8,8 @@ type MenuProps = {
   setStepsEnabled: (enabled: boolean) => void;
   onAboutClick: (enabled: boolean) => void;
   onDownloadClick: (enabled: boolean) => void;
+  onFundingClick: (enabled: boolean) => void;
+  onTeamClick: () => void;
 };
 
 const Menu = ({ setStepsEnabled}: MenuProps) => (
@@ -28,12 +30,14 @@ const Menu = ({ setStepsEnabled}: MenuProps) => (
             Start Tour
           </Nav.Link>
           <Nav.Link as={Link} to="/about">About</Nav.Link>
-          <Nav.Link as={Link} to="/downloads">Downloads</Nav.Link>          
+          <Nav.Link as={Link} to="/downloads">Downloads</Nav.Link>
+          <Nav.Link as={Link} to="/team">Team</Nav.Link>
+          <Nav.Link as={Link} to="/funding">Funding</Nav.Link>          
+          
           {/* <Nav.Link as={Link} to="/methodology">Methodology</Nav.Link>
           <Nav.Link as={Link} to="/metrics">Metrics</Nav.Link>
           <Nav.Link as={Link} to="/release">Release</Nav.Link>
           <Nav.Link as={Link} to="/team">Team</Nav.Link>
-          <Nav.Link as={Link} to="/funding">Funding</Nav.Link>
           <Nav.Link as={Link} to="/help">Help</Nav.Link>  */}
         </Nav>
       </Navbar.Collapse>

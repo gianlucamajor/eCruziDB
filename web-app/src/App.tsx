@@ -10,12 +10,16 @@ import { Steps } from "intro.js-react";
 import { useTour } from "./hooks/useTour";
 import AboutModalRoute from "./components/modals/AboutModalRoute";
 import DownloadModalRoute from "./components/modals/DownloadModalRoute";
+import FundingModalRoute from "./components/modals/FundingModalRoute";
+import TeamModalRoute from "./components/modals/TeamModalRoute";
 
 
 function App() {
   const { stepsEnabled, setStepsEnabled, steps } = useTour();
   const [showDownload, setShowDownload] = useState(false);
   const [showAbout, setShowAbout] = useState(false);
+  const [showFunding, setShowFunding] = useState(false);
+  const [showTeam, setShowTeam] = useState(false);
 
   return (
     <div style={{ width: "100vw", height: "100vh", overflow: "hidden" }}>
@@ -32,14 +36,20 @@ function App() {
               setStepsEnabled={setStepsEnabled}
               onAboutClick={() => setShowAbout(true)}
               onDownloadClick={() => setShowDownload(true)}
+              onFundingClick={() => setShowFunding(true)}
+              onTeamClick={() => setShowTeam(true)}
             />
             <Routes>
               <Route path="/" element={null} />
               <Route path="/about" element={null} />
               <Route path="/downloads" element={null} />
+              <Route path="/funding" element={null} />
+              <Route path="/team" element={null} />
             </Routes>
             <AboutModalRoute show={showAbout} onHide={() => setShowAbout(false)} />
             <DownloadModalRoute show={showDownload} onHide={() => setShowDownload(false)} />
+            <FundingModalRoute show={showFunding} onHide={() => setShowFunding(false)} />
+            <TeamModalRoute show={showTeam} onHide={() => setShowTeam(false)} />
           </Router>
         </div>
       </header>
