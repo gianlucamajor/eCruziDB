@@ -18,7 +18,16 @@ function Table() {
   const [search, setSearch] = useState<string>("");
   const [modalFeatures, setModalFeatures] = useState<string[] | null>(null);
   const [peptidesHtml, setPeptidesHtml] = useState<string | null>(null);
-  const [modalGenomicRegions, setModalGenomicRegions] = useState<{ regions: string[], igvUrl?: string } | null>(null);
+  const [modalGenomicRegions, setModalGenomicRegions] = useState<{
+    regions: string[],
+    igvUrl?: string,
+    epitopeInfo?: {
+      id: string;
+      epitope: string;
+      numberOfPeptides: number;
+      numberOfInserts: number;
+    }
+  } | null>(null);
 
   useEffect(() => {
     fetch("data/epitopes-data.json")
@@ -115,7 +124,13 @@ function Table() {
           onShow={() => {
             setModalGenomicRegions({
               regions: row["Genomic Region Locus"],
-              igvUrl: `${igvBaseUrl}/igv-webapp/?locus=${row["Genomic Region Locus"][0]}`
+              igvUrl: `${igvBaseUrl}/igv-webapp/?locus=${row["Genomic Region Locus"][0]}`,
+              epitopeInfo: {
+                id: row.ID ?? "",
+                epitope: row.Epitope ?? "",
+                numberOfPeptides: row["Number of Peptides"] ?? 0,
+                numberOfInserts: row["Number of Inserts"] ?? 0,
+              }
             });
           }}
         />
@@ -147,7 +162,8 @@ function Table() {
           paginationRowsPerPageOptions={[25, 50, 100]}
           fixedHeader
           fixedHeaderScrollHeight="60vh"
-
+          defaultSortFieldId={4} // Inserts column (see note below)
+          defaultSortAsc={false} // Descending order
         />
       </div>
       {modalFeatures && (
@@ -160,6 +176,7 @@ function Table() {
         <GenomicRegionsModal
           regions={modalGenomicRegions.regions}
           igvUrl={modalGenomicRegions.igvUrl}
+          epitopeInfo={modalGenomicRegions.epitopeInfo}
           onClose={() => setModalGenomicRegions(null)}
         />
       )}

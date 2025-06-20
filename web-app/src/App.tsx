@@ -21,10 +21,10 @@ function App() {
     <div style={{ width: "100vw", height: "100vh", overflow: "hidden" }}>
       <header className="text-center py-3 bg-light">
         <h1 className="display-4 fw-bold" style={{ letterSpacing: "1px" }}>
-          T.cruzi Epitopes Database
+          eCruziDB
         </h1>
         <p className="lead text-secondary mb-0">
-          Epitopes identified from phage display data.
+          Epitopes identified from T. cruzi phage display data.
         </p>
         <div>
           <Router basename={import.meta.env.BASE_URL}>

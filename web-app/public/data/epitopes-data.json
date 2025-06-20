@@ -47106,19 +47106,6 @@
         ]
     },
     {
-        "ID": "1738-31606",
-        "Number of Genomic Regions": 2,
-        "Number of Peptides": 1,
-        "Number of Inserts": 1,
-        "Epitope": "WRASCSRVSRPPAQCKRRPTHPSN",
-        "MSA": "",
-        "Genomic Region Locus": [
-            "CM026588.1:820175-820248",
-            "WNWZ01000162.1:14227-14300"
-        ],
-        "Features": []
-    },
-    {
         "ID": "1739-138715",
         "Number of Genomic Regions": 2,
         "Number of Peptides": 1,
@@ -64242,18 +64229,6 @@
         "Features": []
     },
     {
-        "ID": "2870-58572",
-        "Number of Genomic Regions": 1,
-        "Number of Peptides": 1,
-        "Number of Inserts": 1,
-        "Epitope": "GHRITNSRADTMRLLPTPRQTGTRPADHKQPSVSVAPSLPHTEEAGPPRPPPETPPGVSAA",
-        "MSA": "",
-        "Genomic Region Locus": [
-            "CM026584.1:1573873-1574057"
-        ],
-        "Features": []
-    },
-    {
         "ID": "2871-0",
         "Number of Genomic Regions": 1,
         "Number of Peptides": 3,
@@ -64522,20 +64497,6 @@
             "CM026584.1:1689543-1689746"
         ],
         "Features": []
-    },
-    {
-        "ID": "2891-58533",
-        "Number of Genomic Regions": 1,
-        "Number of Peptides": 1,
-        "Number of Inserts": 1,
-        "Epitope": "GRSQLSHAAASHSSQSRKPPQSQRKEQRWQQSAPMHSGSVGVIP",
-        "MSA": "",
-        "Genomic Region Locus": [
-            "CM026584.1:1693023-1693153"
-        ],
-        "Features": [
-            "CM026584.1-1693063-1693153 | pseudogene | trans-sialidase, Group V, putative | 0.6923076923076923"
-        ]
     },
     {
         "ID": "2892-0",
@@ -71701,20 +71662,6 @@
         "Features": []
     },
     {
-        "ID": "3385-127514",
-        "Number of Genomic Regions": 1,
-        "Number of Peptides": 1,
-        "Number of Inserts": 1,
-        "Epitope": "EDVQELVAPAEDVQELVAPAENVKELVAPAQNVKELVAPAEDVRKLVTPAENVRELVAPAEDVQELVAPAEN",
-        "MSA": "",
-        "Genomic Region Locus": [
-            "CM026586.1:883175-883392"
-        ],
-        "Features": [
-            "CM026586.1-883175-883392 | KAF8288110.1 | hypothetical protein | 1.0"
-        ]
-    },
-    {
         "ID": "3386-0",
         "Number of Genomic Regions": 1,
         "Number of Peptides": 4,
@@ -76434,18 +76381,6 @@
         "MSA": "",
         "Genomic Region Locus": [
             "CM026588.1:586323-586456"
-        ],
-        "Features": []
-    },
-    {
-        "ID": "3717-128124",
-        "Number of Genomic Regions": 1,
-        "Number of Peptides": 1,
-        "Number of Inserts": 1,
-        "Epitope": "APSRARCVRQNQSDDQHLPRRRQPVMFLGNRDTTPIRRHGKDT",
-        "MSA": "",
-        "Genomic Region Locus": [
-            "CM026588.1:587743-587863"
         ],
         "Features": []
     },
@@ -88765,20 +88700,6 @@
             "CM026594.1:424286-424392"
         ],
         "Features": []
-    },
-    {
-        "ID": "4592-116031",
-        "Number of Genomic Regions": 1,
-        "Number of Peptides": 1,
-        "Number of Inserts": 1,
-        "Epitope": "QQQGCRHFQVRHSSQNSQKRTGWRQCRPLPSRSSAH",
-        "MSA": "",
-        "Genomic Region Locus": [
-            "CM026594.1:430939-431048"
-        ],
-        "Features": [
-            "CM026594.1-430939-431048 | pseudogene | trans-sialidase, Group V, putative | 1.0"
-        ]
     },
     {
         "ID": "4593-63664",
@@ -108525,18 +108446,6 @@
         "Features": []
     },
     {
-        "ID": "5997-40737",
-        "Number of Genomic Regions": 1,
-        "Number of Peptides": 1,
-        "Number of Inserts": 1,
-        "Epitope": "RHTERYSERGRPLNAMETKQKQLRCSAHAARQDGSGACRAKESTN",
-        "MSA": "",
-        "Genomic Region Locus": [
-            "CM026607.1:174857-174993"
-        ],
-        "Features": []
-    },
-    {
         "ID": "5998-91374",
         "Number of Genomic Regions": 1,
         "Number of Peptides": 1,
@@ -108967,20 +108876,6 @@
             "CM026607.1:439013-439200"
         ],
         "Features": []
-    },
-    {
-        "ID": "6028-140394",
-        "Number of Genomic Regions": 1,
-        "Number of Peptides": 1,
-        "Number of Inserts": 1,
-        "Epitope": "SRTVQSTPPSYQFHFQHFCTTGSWRQRHHRIPAQYQQCAYCPSAKDGVRPFRCLLSQSWRTP",
-        "MSA": "",
-        "Genomic Region Locus": [
-            "CM026607.1:445573-445763"
-        ],
-        "Features": [
-            "CM026607.1-445573-445763 | pseudogene | trans-sialidase (pseudonote), putative | 1.0"
-        ]
     },
     {
         "ID": "6029-0",
@@ -109901,20 +109796,6 @@
             "CM026608.1:349439-349554"
         ],
         "Features": []
-    },
-    {
-        "ID": "6099-10884",
-        "Number of Genomic Regions": 1,
-        "Number of Peptides": 1,
-        "Number of Inserts": 1,
-        "Epitope": "PSRSTPSHASRQPSPTPSASRHSRSPAHRHHRRP",
-        "MSA": "",
-        "Genomic Region Locus": [
-            "CM026608.1:372726-372829"
-        ],
-        "Features": [
-            "CM026608.1-372726-372829 | pseudogene | dispersed note family protein 1 (DGF-1), putative | 1.0"
-        ]
     },
     {
         "ID": "6100-0",
@@ -114391,20 +114272,6 @@
         ],
         "Features": [
             "CM026612.1-25169-25263 | KAF8287492.1 | hypothetical protein | 1.0"
-        ]
-    },
-    {
-        "ID": "6415-82743",
-        "Number of Genomic Regions": 1,
-        "Number of Peptides": 1,
-        "Number of Inserts": 1,
-        "Epitope": "TEASLSATRQMMAEVPGSDGHLNVVPGSG",
-        "MSA": "",
-        "Genomic Region Locus": [
-            "CM026612.1:308408-308497"
-        ],
-        "Features": [
-            "CM026612.1-308408-308448 | pseudogene | trans-sialidase (pseudonote), putative | 0.449438202247191"
         ]
     },
     {
@@ -122226,18 +122093,6 @@
         "Features": []
     },
     {
-        "ID": "6963-23509",
-        "Number of Genomic Regions": 1,
-        "Number of Peptides": 1,
-        "Number of Inserts": 1,
-        "Epitope": "GMHRTPHTTHNTHSNPRQHTHTQPCRNNNTQMEEGEANRSGT",
-        "MSA": "",
-        "Genomic Region Locus": [
-            "CM026623.1:133408-133535"
-        ],
-        "Features": []
-    },
-    {
         "ID": "6964-123864",
         "Number of Genomic Regions": 1,
         "Number of Peptides": 1,
@@ -124657,20 +124512,6 @@
         ],
         "Features": [
             "WNWZ01000160.1-27395-27489 | KAF8302019.1 | dispersed gene family protein 1 (DGF-1), putative | 1.0"
-        ]
-    },
-    {
-        "ID": "7143-10884",
-        "Number of Genomic Regions": 1,
-        "Number of Peptides": 1,
-        "Number of Inserts": 1,
-        "Epitope": "PSRSTPSHASRQPSPTPSASRHSRSPAHRHHRRP",
-        "MSA": "",
-        "Genomic Region Locus": [
-            "WNWZ01000160.1:27662-27765"
-        ],
-        "Features": [
-            "WNWZ01000160.1-27662-27765 | KAF8302019.1 | dispersed gene family protein 1 (DGF-1), putative | 1.0"
         ]
     },
     {
@@ -127351,20 +127192,6 @@
             "WNWZ01000367.1:27025-27219"
         ],
         "Features": []
-    },
-    {
-        "ID": "7335-42999",
-        "Number of Genomic Regions": 1,
-        "Number of Peptides": 1,
-        "Number of Inserts": 1,
-        "Epitope": "RACQERYPSQHSQRGKAWRQCRPLSSTSPAPPLHAAAAQSE",
-        "MSA": "",
-        "Genomic Region Locus": [
-            "WNWZ01000367.1:32126-32250"
-        ],
-        "Features": [
-            "WNWZ01000367.1-32126-32250 | KAF8289652.1 | putative trans-sialidase, Group VI | 1.0"
-        ]
     },
     {
         "ID": "7336-0",
