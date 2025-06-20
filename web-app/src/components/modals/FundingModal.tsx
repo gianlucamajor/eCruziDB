@@ -14,7 +14,7 @@ const FundingModal = ({ show, onHide }: FundingModalProps) => (
     <Modal.Body>
         <div style={{ display: "flex", justifyContent: "center", marginTop: "1rem" }}>
             <img
-                src="public/capes-cnpq.png"
+                src="img/capes-cnpq.png"
                 alt="CAPES and CNPq logos"
                 style={{ maxWidth: "400px", width: "100%", height: "auto" }}
             />
