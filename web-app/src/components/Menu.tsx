@@ -36,6 +36,7 @@ const Menu = ({ setStepsEnabled}: MenuProps) => (
           <Nav.Link as={Link} to="/downloads">Downloads</Nav.Link>
           <Nav.Link as={Link} to="/team">Team</Nav.Link>
           <Nav.Link as={Link} to="/funding">Funding</Nav.Link>
+          <Nav.Link as={Link} to="/release">Release</Nav.Link>
           <Nav.Link as={Link} to="/contact">Contact</Nav.Link>          
           {/*<Nav.Link as={Link} to="/metrics">Metrics</Nav.Link>
           <Nav.Link as={Link} to="/release">Release</Nav.Link>
