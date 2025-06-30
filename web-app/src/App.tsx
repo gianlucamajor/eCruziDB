@@ -15,6 +15,7 @@ import TeamModalRoute from "./components/modals/TeamModalRoute";
 import MetricsModalRoute from "./components/modals/MetricsModalRoute";
 import ReleaseModalRoute from "./components/modals/ReleaseModalRoute";
 import ContactModalRoute from "./components/modals/ContactModalRoute";
+import MethodologyModalRoute from "./components/modals/MethodologyModalRoute";
 
 
 function App() {
@@ -49,11 +50,15 @@ function App() {
             <Routes>
               <Route path="/" element={null} />
               <Route path="/about" element={null} />
+              <Route path="/methodology" element={null} />
               <Route path="/downloads" element={null} />
               <Route path="/funding" element={null} />
               <Route path="/team" element={null} />
+              <Route path="/release" element={null} />
+              <Route path="/contact" element={null} />
             </Routes>
             <AboutModalRoute show={showAbout} onHide={() => setShowAbout(false)} />
+            <MethodologyModalRoute show={showAbout} onHide={() => setShowAbout(false)} />
             <DownloadModalRoute show={showDownload} onHide={() => setShowDownload(false)} />
             <FundingModalRoute show={showFunding} onHide={() => setShowFunding(false)} />
             <TeamModalRoute show={showTeam} onHide={() => setShowTeam(false)} />
