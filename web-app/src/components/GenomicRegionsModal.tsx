@@ -63,7 +63,7 @@ function GenomicRegionsModal({ regions, onClose, igvUrl, epitopeInfo }: GenomicR
             Inserts: {epitopeInfo?.numberOfInserts ?? "-"}
           </span>
         </div>
-        <div style={{ maxHeight: "150px", overflowY: "auto", marginBottom: "1rem", fontSize: "0.85rem" }}>
+        <div style={{ maxHeight: "90px", overflowY: "auto", marginBottom: "1rem", fontSize: "0.85rem" }}>
           <table className="table table-sm mb-0">
             <thead>
               <tr>
@@ -109,7 +109,7 @@ function GenomicRegionsModal({ regions, onClose, igvUrl, epitopeInfo }: GenomicR
           <iframe
             src={currentIgvUrl}
             title="IGV Browser"
-            style={{ width: "100%", height: "60vh", border: "1px solid #ccc" }}
+            style={{ width: "100%", height: "50vh", border: "1px solid #ccc" }}
           />
         </div>
         <button
