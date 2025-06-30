@@ -12,11 +12,12 @@ type ReleaseNote = {
 
 const releaseNotes: ReleaseNote[] = [
   {
-    version: "1.0.1",
+    version: "1.1.1",
     date: "2025-06-23",
     summary: "Minor improvements and bug fixes.",
     features: [
-      "Fixed position of close button in Genomic Regions modal"
+      "Show epitope and their information in Genomic Regions",
+      "Fixed position of close button in Genomic Regions"
     ],
   },
   {
@@ -32,6 +33,7 @@ const releaseNotes: ReleaseNote[] = [
       "Show epitope sequences",
       "Guided tour (Start Tour)",
       "About page",
+      "Methodology page",
       "Downloads page",
       "Team page",
       "Funding page",
