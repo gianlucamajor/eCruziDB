@@ -1,3 +1,16 @@
+import type { Annotation } from "./Annotation";
+
+export interface IEDB {
+  IEDB_id: string;
+  sequence: string;
+  qstart: string;
+  qend: string;
+  sstart: string;
+  send: string;
+  source_molecule: string;
+  source_molecule_IRI: string;
+}
+
 export interface Epitope {
   ID: string;
   "Number of Genomic Regions": number;
@@ -6,5 +19,8 @@ export interface Epitope {
   Epitope: string;
   MSA: string;
   "Genomic Region Locus": string[];
-  Features: any[]; // You can replace 'any' with a more specific type if you know the structure
+  Features: {
+    Annotation: Annotation[]; // Use external type here
+    IEDB: IEDB[];
+  };
 }

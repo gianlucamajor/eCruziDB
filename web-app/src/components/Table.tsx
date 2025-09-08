@@ -16,7 +16,7 @@ function Table() {
   const [data, setData] = useState<Epitope[]>([]);
   const [error, setError] = useState<string | null>(null);
   const [search, setSearch] = useState<string>("");
-  const [modalFeatures, setModalFeatures] = useState<string[] | null>(null);
+  const [modalFeatures, setModalFeatures] = useState<Epitope["Features"] | null>(null);
   const [peptidesHtml, setPeptidesHtml] = useState<string | null>(null);
   const [modalGenomicRegions, setModalGenomicRegions] = useState<{
     regions: string[],
@@ -44,7 +44,12 @@ function Table() {
     (epitope) =>
       (epitope.Epitope ?? "").toLowerCase().includes(search.toLowerCase()) ||
       (epitope.ID ?? "").toLowerCase() === search.toLowerCase() ||
-      (epitope.Features?.some(feature => feature.toLowerCase().includes(search.toLowerCase())) ?? false)
+      (epitope.Features?.Annotation?.some(a =>
+        a.description?.toLowerCase().includes(search.toLowerCase())
+      ) ?? false) ||
+      (epitope.Features?.IEDB?.some(i =>
+        i.sequence?.toLowerCase().includes(search.toLowerCase())
+      ) ?? false)
   );
 
   const igvBaseUrl = import.meta.env.VITE_IGV_BASE_URL;

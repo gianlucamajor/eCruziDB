@@ -1,19 +1,32 @@
+import type { Annotation } from "../types/Annotation";
 
 type FeaturesCellProps = {
-  features: string[] | undefined;
+  features: {
+    Annotation: Annotation[];
+  } | undefined;
   onShowAll: () => void;
 };
 
 function FeaturesCell({ features, onShowAll }: FeaturesCellProps) {
-  if (!features || features.length === 0) return null;
-  const shown = features.slice(0, 2).join(", ");
+  if (!features) return null;
+  const annotationSummaries = (features.Annotation ?? []).map(a => a.description);
+  const allSummaries = [...annotationSummaries];
+  if (allSummaries.length === 0) return null;
+  const shown = allSummaries.slice(0, 1).join(", ");
   const more =
-    features.length > 2 ? (
+    allSummaries.length > 1 ? (
       <span
         style={{ color: "#007bff", cursor: "pointer", marginLeft: 10, textDecoration: "underline" }}
         onClick={onShowAll}
       >
-        ...and {features.length - 2} more
+        +{allSummaries.length - 1}
+      </span>
+    ) : allSummaries.length > 0 ? (
+      <span
+        style={{ color: "#007bff", cursor: "pointer", marginLeft: 10 }}
+        onClick={onShowAll}
+      >
+        +
       </span>
     ) : null;
   return (
