@@ -47,7 +47,7 @@ function Table() {
       (epitope.Features?.Annotation?.some(a =>
         a.description?.toLowerCase().includes(search.toLowerCase())
       ) ?? false) ||
-      (epitope.Features?.IEDB?.some(i =>
+      (epitope.Features?.tcIEDB?.some(i =>
         i.sequence?.toLowerCase().includes(search.toLowerCase())
       ) ?? false)
   );

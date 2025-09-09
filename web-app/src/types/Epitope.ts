@@ -1,15 +1,5 @@
 import type { Annotation } from "./Annotation";
-
-export interface IEDB {
-  IEDB_id: string;
-  sequence: string;
-  qstart: string;
-  qend: string;
-  sstart: string;
-  send: string;
-  source_molecule: string;
-  source_molecule_IRI: string;
-}
+import type { tcIEDB } from "./IEDB";
 
 export interface Epitope {
   ID: string;
@@ -20,7 +10,7 @@ export interface Epitope {
   MSA: string;
   "Genomic Region Locus": string[];
   Features: {
-    Annotation: Annotation[]; // Use external type here
-    IEDB: IEDB[];
+    Annotation: Annotation[];
+    tcIEDB: tcIEDB[];
   };
 }
