@@ -10,7 +10,7 @@ export interface Epitope {
   MSA: string;
   "Genomic Region Locus": string[];
   Features: {
-    Annotation: Annotation[];
+    GenomicRegionsAnnotation: Annotation[];
     tcIEDB: tcIEDB[];
   };
 }

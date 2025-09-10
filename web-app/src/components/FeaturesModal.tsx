@@ -5,7 +5,7 @@ function FeaturesModal({
   onClose,
 }: {
   features: {
-    Annotation: Annotation[];
+    GenomicRegionsAnnotation: Annotation[];
   };
   onClose: () => void;
 }) {
@@ -37,7 +37,7 @@ function FeaturesModal({
       >
         <h5>Annotated Genomic Regions </h5>
         <ul>
-          {(features.Annotation ?? []).map((a, i) => (
+          {(features.GenomicRegionsAnnotation ?? []).map((a, i) => (
             <li key={`ann-${i}`}> {a.genomic_region} | {a.type} | {a.description} | {a.coverage} </li>
           ))}
         </ul>
