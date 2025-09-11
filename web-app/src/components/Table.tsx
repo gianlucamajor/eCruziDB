@@ -148,7 +148,16 @@ function Table() {
         </span>
       ),
       cell: (row: Epitope) => (
-        <FeaturesCell features={row.Features} onShowAll={() => setModalFeatures(row.Features)} />
+        <FeaturesCell 
+          features={row.Features} 
+          onShowAll={() => setModalFeatures(row.Features)}
+          epitopeInfo={{
+            id: row.ID,
+            epitope: row.Epitope,
+            numberOfPeptides: row["Number of Peptides"],
+            numberOfInserts: row["Number of Inserts"],
+          }}
+        />
       ),
       wrap: true,
     },

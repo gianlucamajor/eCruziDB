@@ -9,9 +9,15 @@ type FeaturesCellProps = {
     TCruziIEDB?: tcIEDB[];
   } | undefined;
   onShowAll: () => void;
+  epitopeInfo?: {
+    id: string;
+    epitope: string;
+    numberOfPeptides: number;
+    numberOfInserts: number;
+  };
 };
 
-function FeaturesCell({ features, onShowAll }: FeaturesCellProps) {
+function FeaturesCell({ features, onShowAll, epitopeInfo }: FeaturesCellProps) {
   const [showIEDBModal, setShowIEDBModal] = useState(false);
 
   if (!features) return null;
@@ -59,6 +65,7 @@ function FeaturesCell({ features, onShowAll }: FeaturesCellProps) {
           {showIEDBModal && (
             <TcIEDBModal
               tcIEDB={features.TCruziIEDB ?? []}
+              epitopeInfo={epitopeInfo}
               onClose={() => setShowIEDBModal(false)}
             />
           )}

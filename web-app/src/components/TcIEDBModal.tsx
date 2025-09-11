@@ -3,9 +3,15 @@ import type { tcIEDB } from "../types/IEDB";
 type TcIEDBModalProps = {
   tcIEDB: tcIEDB[];
   onClose: () => void;
+  epitopeInfo?: {
+    id: string;
+    epitope: string;
+    numberOfPeptides: number;
+    numberOfInserts: number;
+  };
 };
 
-function TcIEDBModal({ tcIEDB, onClose }: TcIEDBModalProps) {
+function TcIEDBModal({ tcIEDB, onClose, epitopeInfo }: TcIEDBModalProps) {
   if (!tcIEDB || tcIEDB.length === 0) return null;
   return (
     <div
@@ -23,52 +29,78 @@ function TcIEDBModal({ tcIEDB, onClose }: TcIEDBModalProps) {
       <div
         style={{
           background: "white",
-          padding: "2rem",
           borderRadius: "8px",
           minWidth: "300px",
           maxWidth: "90vw",
           maxHeight: "80vh",
-          overflowY: "auto"
+          display: "flex",
+          flexDirection: "column"
         }}
         onClick={e => e.stopPropagation()}
       >
-        <h5>T.cruzi IEDB Epitopes hits</h5>
-        <table className="table table-bordered table-sm">
-          <thead>
-            <tr>
-              <th>IEDB ID</th>
-              <th>Sequence</th>
-              <th>Query Start</th>
-              <th>Query End</th>
-              <th>Subject Start</th>
-              <th>Subject End</th>
-              <th>Source Molecule</th>
-              
-            </tr>
-          </thead>
-          <tbody>
-            {tcIEDB.map((iedb, i) => (
-              <tr key={`iedb-${i}`}>
-                <td>
-                    <a href={`https://www.iedb.org/epitope/${iedb.IEDB_id}`} target="_blank" rel="noopener noreferrer">
-                    {iedb.IEDB_id}
-                    </a>
-                </td>
-                <td>{iedb.sequence}</td>
-                <td>{iedb.qstart}</td>
-                <td>{iedb.qend}</td>
-                <td>{iedb.sstart}</td>
-                <td>{iedb.send}</td>
-                <td>
-                    <a href={iedb.source_molecule_IRI} target="_blank" rel="noopener noreferrer">
-                        {iedb.source_molecule}
-                    </a>
-                </td>
+        {/* Static header section */}
+        <div style={{ padding: "2rem 2rem 0" }}>
+          <h5>T.cruzi IEDB Epitopes hits</h5>
+          <div style={{ 
+            marginBottom: "0.5rem", 
+            fontSize: "0.95em",
+            background: "#fffbe6",
+            border: "1px solid #ffe58f",
+            borderRadius: "4px",
+            padding: "0.5rem"
+          }}>
+            <span style={{ fontWeight: 500 }}>
+              Epitope: {epitopeInfo?.epitope ?? "-"} |{" "}
+              ID: {epitopeInfo?.id ?? "-"} |{" "}
+              Peptides: {epitopeInfo?.numberOfPeptides ?? "-"} |{" "}
+              Inserts: {epitopeInfo?.numberOfInserts ?? "-"}
+            </span>
+          </div>
+        </div>
+
+        {/* Scrollable content section */}
+        <div style={{ 
+          padding: "0 2rem 2rem",
+          overflowY: "auto",
+          flex: 1
+        }}>
+          <table className="table table-bordered table-sm">
+            <thead>
+              <tr>
+                <th>IEDB ID</th>
+                <th>Sequence</th>
+                <th>Query Start</th>
+                <th>Query End</th>
+                <th>Subject Start</th>
+                <th>Subject End</th>
+                <th>Source Molecule</th>
+                
               </tr>
-            ))}
-          </tbody>
-        </table>
-        <button className="btn btn-secondary mt-3" onClick={onClose}>Close</button>
+            </thead>
+            <tbody>
+              {tcIEDB.map((iedb, i) => (
+                <tr key={`iedb-${i}`}>
+                  <td>
+                      <a href={`https://www.iedb.org/epitope/${iedb.IEDB_id}`} target="_blank" rel="noopener noreferrer">
+                      {iedb.IEDB_id}
+                      </a>
+                  </td>
+                  <td>{iedb.sequence}</td>
+                  <td>{iedb.qstart}</td>
+                  <td>{iedb.qend}</td>
+                  <td>{iedb.sstart}</td>
+                  <td>{iedb.send}</td>
+                  <td>
+                      <a href={iedb.source_molecule_IRI} target="_blank" rel="noopener noreferrer">
+                          {iedb.source_molecule}
+                      </a>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+          <button className="btn btn-secondary mt-3" onClick={onClose}>Close</button>
+        </div>
       </div>
     </div>
   );
