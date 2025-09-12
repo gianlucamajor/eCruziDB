@@ -50,7 +50,7 @@ function TcIEDBModal({ tcIEDB, onClose, epitopeInfo }: TcIEDBModalProps) {
             padding: "0.5rem"
           }}>
             <span style={{ fontWeight: 500 }}>
-              Epitope: {epitopeInfo?.epitope ?? "-"} |{" "}
+              eCruzi Epitope: {epitopeInfo?.epitope ?? "-"} |{" "}
               ID: {epitopeInfo?.id ?? "-"} |{" "}
               Peptides: {epitopeInfo?.numberOfPeptides ?? "-"} |{" "}
               Inserts: {epitopeInfo?.numberOfInserts ?? "-"}
@@ -69,10 +69,10 @@ function TcIEDBModal({ tcIEDB, onClose, epitopeInfo }: TcIEDBModalProps) {
               <tr>
                 <th>IEDB ID</th>
                 <th>Sequence</th>
-                <th>Query Start</th>
-                <th>Query End</th>
-                <th>Subject Start</th>
-                <th>Subject End</th>
+                <th>eCruzi Start</th>
+                <th>eCruzi End</th>
+                <th>IEDB Start</th>
+                <th>IEDB End</th>
                 <th>Source Molecule</th>
                 
               </tr>

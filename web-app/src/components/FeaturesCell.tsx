@@ -48,6 +48,7 @@ function FeaturesCell({ features, onShowAll, epitopeInfo }: FeaturesCellProps) {
       {more}
       {tcEptIEDBCount > 0 && (
         <>
+          <span style={{ marginLeft: 10, color: "#6c757d" }}>|</span>
           <span
             style={{
               marginLeft: 10,
@@ -60,7 +61,7 @@ function FeaturesCell({ features, onShowAll, epitopeInfo }: FeaturesCellProps) {
               setShowIEDBModal(true);
             }}
           >
-            | {tcEptIEDBCount} Tc. IEDB
+            {tcEptIEDBCount} Tc. IEDB
           </span>
           {showIEDBModal && (
             <TcIEDBModal
