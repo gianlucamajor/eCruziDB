@@ -8,9 +8,19 @@ type ReleaseNote = {
   date: string;
   summary: string;
   features: string[];
+  sourceOfData?: string;
 };
 
 const releaseNotes: ReleaseNote[] = [
+  {
+    version: "1.2.0",
+    date: "2025-09-17",
+    summary: "Minor improvements",
+    features: [
+      "Show T.cruzi IEDB epitope hits",
+    ],
+    sourceOfData: "epitopes-data.json (md5: 8f2e3c4f7e1b6c3a9d4e5f6a7b8c9d0e) generated on 2025-06-05 by Epizap:v0.4.0-alpha."
+  },
   {
     version: "1.1.1",
     date: "2025-06-23",
@@ -88,6 +98,7 @@ const ReleaseModal = ({ show, onHide }: ReleaseModalProps) => {
                 <li key={idx}>{feature}</li>
               ))}
             </ul>
+            <p>Data source: {selectedNote.sourceOfData}</p>
           </div>
         )}
       </Modal.Body>
