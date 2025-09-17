@@ -1,3 +1,6 @@
+import type { Annotation } from "./Annotation";
+import type { tcIEDB } from "./IEDB";
+
 export interface Epitope {
   ID: string;
   "Number of Genomic Regions": number;
@@ -6,5 +9,8 @@ export interface Epitope {
   Epitope: string;
   MSA: string;
   "Genomic Region Locus": string[];
-  Features: any[]; // You can replace 'any' with a more specific type if you know the structure
+  Features: {
+    GenomicRegionsAnnotation: Annotation[];
+    tcIEDB: tcIEDB[];
+  };
 }

@@ -16,7 +16,7 @@ function Table() {
   const [data, setData] = useState<Epitope[]>([]);
   const [error, setError] = useState<string | null>(null);
   const [search, setSearch] = useState<string>("");
-  const [modalFeatures, setModalFeatures] = useState<string[] | null>(null);
+  const [modalFeatures, setModalFeatures] = useState<Epitope["Features"] | null>(null);
   const [peptidesHtml, setPeptidesHtml] = useState<string | null>(null);
   const [modalGenomicRegions, setModalGenomicRegions] = useState<{
     regions: string[],
@@ -44,7 +44,12 @@ function Table() {
     (epitope) =>
       (epitope.Epitope ?? "").toLowerCase().includes(search.toLowerCase()) ||
       (epitope.ID ?? "").toLowerCase() === search.toLowerCase() ||
-      (epitope.Features?.some(feature => feature.toLowerCase().includes(search.toLowerCase())) ?? false)
+      (epitope.Features?.GenomicRegionsAnnotation?.some(a =>
+        a.description?.toLowerCase().includes(search.toLowerCase())
+      ) ?? false) ||
+      (epitope.Features?.tcIEDB?.some(i =>
+        i.sequence?.toLowerCase().includes(search.toLowerCase())
+      ) ?? false)
   );
 
   const igvBaseUrl = import.meta.env.VITE_IGV_BASE_URL;
@@ -143,7 +148,16 @@ function Table() {
         </span>
       ),
       cell: (row: Epitope) => (
-        <FeaturesCell features={row.Features} onShowAll={() => setModalFeatures(row.Features)} />
+        <FeaturesCell 
+          features={row.Features} 
+          onShowAll={() => setModalFeatures(row.Features)}
+          epitopeInfo={{
+            id: row.ID,
+            epitope: row.Epitope,
+            numberOfPeptides: row["Number of Peptides"],
+            numberOfInserts: row["Number of Inserts"],
+          }}
+        />
       ),
       wrap: true,
     },

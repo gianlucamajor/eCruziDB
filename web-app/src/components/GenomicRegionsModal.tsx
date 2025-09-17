@@ -57,7 +57,7 @@ function GenomicRegionsModal({ regions, onClose, igvUrl, epitopeInfo }: GenomicR
           padding: "0.5rem"
         }}>
           <span style={{ fontWeight: 500 }}>
-            Epitope: {epitopeInfo?.epitope ?? "-"} |{" "}
+            eCruzi Epitope: {epitopeInfo?.epitope ?? "-"} |{" "}
             ID: {epitopeInfo?.id ?? "-"} |{" "}
             Peptides: {epitopeInfo?.numberOfPeptides ?? "-"} |{" "}
             Inserts: {epitopeInfo?.numberOfInserts ?? "-"}

@@ -1,5 +1,14 @@
+import type { Annotation } from "../types/Annotation";
 
-function FeaturesModal({ features, onClose }: { features: string[]; onClose: () => void }) {
+function FeaturesModal({
+  features,
+  onClose,
+}: {
+  features: {
+    GenomicRegionsAnnotation: Annotation[];
+  };
+  onClose: () => void;
+}) {
   if (!features) return null;
   return (
     <div
@@ -26,10 +35,10 @@ function FeaturesModal({ features, onClose }: { features: string[]; onClose: () 
         }}
         onClick={e => e.stopPropagation()}
       >
-        <h5>All Features</h5>
+        <h5>Annotated Genomic Regions </h5>
         <ul>
-          {features.map((f, i) => (
-            <li key={i}>{f}</li>
+          {(features.GenomicRegionsAnnotation ?? []).map((a, i) => (
+            <li key={`ann-${i}`}> {a.genomic_region} | {a.type} | {a.description} | {a.coverage} </li>
           ))}
         </ul>
         <button className="btn btn-secondary mt-3" onClick={onClose}>Close</button>
