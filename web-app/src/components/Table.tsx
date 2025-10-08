@@ -44,9 +44,7 @@ function Table() {
     (epitope) =>
       (epitope.Epitope ?? "").toLowerCase().includes(search.toLowerCase()) ||
       (epitope.ID ?? "").toLowerCase() === search.toLowerCase() ||
-      (epitope.Features?.GenomicRegionsAnnotation?.some(a =>
-        a.description?.toLowerCase().includes(search.toLowerCase())
-      ) ?? false) ||
+      (epitope.Features?.ProteinBestHit?.protein_description?.toLowerCase().includes(search.toLowerCase()) ?? false) ||
       (epitope.Features?.tcIEDB?.some(i =>
         i.sequence?.toLowerCase().includes(search.toLowerCase())
       ) ?? false)
