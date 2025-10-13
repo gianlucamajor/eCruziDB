@@ -1,4 +1,4 @@
-export interface tcIEDB {
+export interface IEDB {
   IEDB_id: string;
   sequence: string;
   qstart: string;
@@ -8,3 +8,6 @@ export interface tcIEDB {
   source_molecule: string;
   source_molecule_IRI: string;
 }
+
+export type tcIEDB = IEDB;
+export type HumanIEDB = IEDB;

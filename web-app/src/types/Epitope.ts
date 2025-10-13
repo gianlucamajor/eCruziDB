@@ -1,6 +1,6 @@
 import type { Annotation } from "./Annotation";
 import type { ProteinBestHit } from "./ProteinBestHit";
-import type { tcIEDB } from "./IEDB";
+import type { tcIEDB, HumanIEDB } from "./IEDB";
 
 export interface Epitope {
   ID: string;
@@ -13,6 +13,7 @@ export interface Epitope {
   Features: {
     GenomicRegionsAnnotation: Annotation[];
     ProteinBestHit?: ProteinBestHit;
-    tcIEDB: tcIEDB[];
+    TCruziIEDB?: tcIEDB[];
+    HumanIEDB?: HumanIEDB[];
   };
 }
