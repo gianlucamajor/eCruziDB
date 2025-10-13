@@ -32,7 +32,7 @@ function App() {
           eCruziDB
         </h1>
         <p className="lead text-secondary mb-0">
-          Epitopes identified from T. cruzi phage display data.
+         Epitopes identified from  <em>Trypanosoma cruzi</em> phage display data.
         </p>
         <div>
           <Router basename={import.meta.env.BASE_URL}>

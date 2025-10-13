@@ -13,6 +13,16 @@ type ReleaseNote = {
 
 const releaseNotes: ReleaseNote[] = [
   {
+    version: "1.3.0",
+    date: "2025-10-13",
+    summary: "Minor improvements",
+    features: [
+      "Show T. cruzi proteome info as description on annotation",
+      "Show Human IEDB epitope hits",
+    ],
+    sourceOfData: "epitopes-data.json (md5: b39536ac321017a5e9c8b93c839a43a0) generated on 2025-09-25 by Epizap:v0.5.0-alpha."
+  },
+  {
     version: "1.2.0",
     date: "2025-09-17",
     summary: "Minor improvements",
