@@ -44,10 +44,7 @@ function Table() {
     (epitope) =>
       (epitope.Epitope ?? "").toLowerCase().includes(search.toLowerCase()) ||
       (epitope.ID ?? "").toLowerCase() === search.toLowerCase() ||
-      (epitope.Features?.ProteinBestHit?.protein_description?.toLowerCase().includes(search.toLowerCase()) ?? false) ||
-      (epitope.Features?.tcIEDB?.some(i =>
-        i.sequence?.toLowerCase().includes(search.toLowerCase())
-      ) ?? false)
+      (epitope.Features?.ProteinBestHit?.protein_description?.toLowerCase().includes(search.toLowerCase()) ?? false) 
   );
 
   const igvBaseUrl = import.meta.env.VITE_IGV_BASE_URL;
@@ -141,7 +138,7 @@ function Table() {
     },
     {
       name: (
-        <span title="Features annotations associated with this epitope" style={{ cursor: "help" }}>
+        <span title="Proteome T. cruzi hit | IEDB T. cruzi Epitope | IEDB Human epitope" style={{ cursor: "help" }}>
           Annotations
         </span>
       ),
