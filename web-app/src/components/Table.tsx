@@ -9,6 +9,8 @@ import PeptidesCell from "./PeptidesCell";
 import PeptidesModal from "./PeptidesModal";
 import GenomicRegionsModal from "./GenomicRegionsModal";
 import GenomicRegionsCell from "./GenomicRegionsCell";
+import InsertsCell from "./InsertsCell";
+import InsertsByGroupModal from "./InsertsByGroupModal";
 
 
 // Main Table component
@@ -27,6 +29,15 @@ function Table() {
       numberOfPeptides: number;
       numberOfInserts: number;
     }
+  } | null>(null);
+  const [modalInsertsByGroup, setModalInsertsByGroup] = useState<{
+    insertsByGroup: Record<string, number>;
+    epitopeInfo: {
+      id: string;
+      epitope: string;
+      numberOfPeptides: number;
+      numberOfInserts: number;
+    };
   } | null>(null);
 
   useEffect(() => {
@@ -103,9 +114,19 @@ function Table() {
       width: "100px",
       sortable: true,
       cell: (row: Epitope) => (
-        <span className="inserts-col-cell" style={{ display: "block", width: "100%" }}>
-          {row["Number of Inserts"] ?? ""}
-        </span>
+        <InsertsCell
+          value={row["Number of Inserts"] ?? 0}
+          insertsByGroup={row["Number of Inserts by Group"]}
+          onShow={(insertsByGroup) => setModalInsertsByGroup({
+            insertsByGroup,
+            epitopeInfo: {
+              id: row.ID,
+              epitope: row.Epitope,
+              numberOfPeptides: row["Number of Peptides"],
+              numberOfInserts: row["Number of Inserts"],
+            }
+          })}
+        />
       ),
     },
     {
@@ -187,6 +208,13 @@ function Table() {
           igvUrl={modalGenomicRegions.igvUrl}
           epitopeInfo={modalGenomicRegions.epitopeInfo}
           onClose={() => setModalGenomicRegions(null)}
+        />
+      )}
+      {modalInsertsByGroup && (
+        <InsertsByGroupModal
+          insertsByGroup={modalInsertsByGroup.insertsByGroup}
+          epitopeInfo={modalInsertsByGroup.epitopeInfo}
+          onClose={() => setModalInsertsByGroup(null)}
         />
       )}
     </div>
