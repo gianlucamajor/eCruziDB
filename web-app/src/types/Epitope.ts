@@ -7,6 +7,7 @@ export interface Epitope {
   "Number of Genomic Regions": number;
   "Number of Peptides": number;
   "Number of Inserts": number;
+  "Number of Inserts by Group"?: Record<string, number>;
   Epitope: string;
   MSA: string;
   "Genomic Region Locus": string[];
