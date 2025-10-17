@@ -2,11 +2,15 @@ import type { ProteinBestHit } from "../types/ProteinBestHit";
 
 function FeaturesModal({
   features,
+  epitope,
+  epizapId,
   onClose,
 }: {
-  features: {
+  features?: {
     ProteinBestHit?: ProteinBestHit;
-  };
+  } | null | undefined;
+  epitope?: string;
+  epizapId?: string;
   onClose: () => void;
 }) {
   if (!features || !features.ProteinBestHit) return null;
@@ -42,22 +46,81 @@ function FeaturesModal({
         }}
         onClick={(e) => e.stopPropagation()}
       >
-        <h5>Protein</h5>
+        <h5>Protein best hit</h5>
+        <div style={{ marginBottom: "0.5rem" }}>
+          {epizapId && (
+            <p>
+              <strong>Epizap ID:</strong> {epizapId}
+            </p>
+          )}
+          {epitope && (
+            <p>
+              <strong>Epitope sequence:</strong> {epitope}
+            </p>
+          )}
+        </div>
         <div style={{ marginBottom: "1rem" }}>
-          <p>
-            <strong>ID:</strong> {hit.protein_id}
-          </p>
-          <p>
-            <strong>Description:</strong>{" "}
-            <a
-              href={ncbiUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ color: "#007bff", textDecoration: "underline" }}
-            >
-              {hit.protein_description}
-            </a>
-          </p>
+          <table style={{ width: "100%", fontSize: "1rem" }}>
+            <tbody>
+              <tr>
+                <td style={{ fontWeight: "bold", paddingRight: 10, verticalAlign: "top" }}>ID</td>
+                <td>
+                  <a
+                    href={ncbiUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ color: "#007bff", textDecoration: "underline" }}
+                  >
+                    {hit.protein_id}
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td style={{ fontWeight: "bold", paddingRight: 10, verticalAlign: "top" }}>Description</td>
+                <td>{hit.protein_description}</td>
+              </tr>
+              <tr>
+                <td style={{ fontWeight: "bold", paddingRight: 10, verticalAlign: "top" }}>Percent identity</td>
+                <td>{hit.pident}</td>
+              </tr>
+              <tr>
+                <td style={{ fontWeight: "bold", paddingRight: 10, verticalAlign: "top" }}>Length</td>
+                <td>{hit.length}</td>
+              </tr>
+              <tr>
+                <td style={{ fontWeight: "bold", paddingRight: 10, verticalAlign: "top" }}>Mismatches</td>
+                <td>{hit.mismatches}</td>
+              </tr>
+              <tr>
+                <td style={{ fontWeight: "bold", paddingRight: 10, verticalAlign: "top" }}>Gap opens</td>
+                <td>{hit.gap_opens}</td>
+              </tr>
+              <tr>
+                <td style={{ fontWeight: "bold", paddingRight: 10, verticalAlign: "top" }}>Query start</td>
+                <td>{hit.qstart}</td>
+              </tr>
+              <tr>
+                <td style={{ fontWeight: "bold", paddingRight: 10, verticalAlign: "top" }}>Query end</td>
+                <td>{hit.qend}</td>
+              </tr>
+              <tr>
+                <td style={{ fontWeight: "bold", paddingRight: 10, verticalAlign: "top" }}>Subject start</td>
+                <td>{hit.sstart}</td>
+              </tr>
+              <tr>
+                <td style={{ fontWeight: "bold", paddingRight: 10, verticalAlign: "top" }}>Subject end</td>
+                <td>{hit.send}</td>
+              </tr>
+              <tr>
+                <td style={{ fontWeight: "bold", paddingRight: 10, verticalAlign: "top" }}>E-value</td>
+                <td>{hit.evalue}</td>
+              </tr>
+              <tr>
+                <td style={{ fontWeight: "bold", paddingRight: 10, verticalAlign: "top" }}>Bitscore</td>
+                <td>{hit.bitscore}</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
         <button className="btn btn-secondary mt-3" onClick={onClose}>
           Close

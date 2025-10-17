@@ -18,7 +18,7 @@ function Table() {
   const [data, setData] = useState<Epitope[]>([]);
   const [error, setError] = useState<string | null>(null);
   const [search, setSearch] = useState<string>("");
-  const [modalFeatures, setModalFeatures] = useState<Epitope["Features"] | null>(null);
+  const [modalFeatures, setModalFeatures] = useState<{features: Epitope["Features"] | null; epitope?: string; epizapId?: string;} | null>(null);
   const [peptidesHtml, setPeptidesHtml] = useState<string | null>(null);
   const [modalGenomicRegions, setModalGenomicRegions] = useState<{
     regions: string[],
@@ -166,7 +166,7 @@ function Table() {
       cell: (row: Epitope) => (
         <FeaturesCell 
           features={row.Features} 
-          onShowAll={() => setModalFeatures(row.Features)}
+          onShowAll={() => setModalFeatures({ features: row.Features, epitope: row.Epitope, epizapId: row.ID })}
           epitopeInfo={{
             id: row.ID,
             epitope: row.Epitope,
@@ -197,7 +197,12 @@ function Table() {
         />
       </div>
       {modalFeatures && (
-        <FeaturesModal features={modalFeatures} onClose={() => setModalFeatures(null)} />
+        <FeaturesModal
+          features={modalFeatures.features ?? undefined}
+          epitope={modalFeatures.epitope}
+          epizapId={modalFeatures.epizapId}
+          onClose={() => setModalFeatures(null)}
+        />
       )}
       {peptidesHtml && (
         <PeptidesModal htmlFile={peptidesHtml} onClose={() => setPeptidesHtml(null)} />
