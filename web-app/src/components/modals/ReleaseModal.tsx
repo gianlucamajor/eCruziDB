@@ -12,6 +12,17 @@ type ReleaseNote = {
 };
 
 const releaseNotes: ReleaseNote[] = [
+    {
+    version: "1.4.0",
+    date: "2025-17-13",
+    summary: "Minor improvements",
+    features: [
+      "Show number of insets by group of patients",
+      "Show details of best hit T. cruzi proteome",
+      
+    ],
+    sourceOfData: "epitopes-data.json (md5: 5a0b607f07948fc22704fdaa1734a076) generated from epitopes list reported on 2025-09-25 by epitope_reporter from Epizap:v0.6.0."
+  },
   {
     version: "1.3.0",
     date: "2025-10-13",
