@@ -62,6 +62,12 @@ t-cruzi-epitopes-db
    npm run dev
    ```
 
+## IGV-webapp
+```
+npx http-server -a localhost /home/gianluca/www/epizap
+http://localhost:8080/igv-webapp/?locus=CM026600.1:31354-31391
+```
+
 ## Usage
 1. Building to production 
    ```
