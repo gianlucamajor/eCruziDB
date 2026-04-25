@@ -1,0 +1,10 @@
+[
+  {
+    "id": "biomarker-candidates",
+    "title": "Selection of Potential Biomarker Candidates",
+    "description": "The pairwise scatter plot analysis, the predicted epitope that exhibited strictly basal reactivity in the Control group (Z <= 0) alongside high immunological recognition in the pathological groups (Z >= 3) were selected. The exact Z-score values and the sequences of the highlighted peptides are summarized here.",
+    "imagePath": "img/potential-biomarker-epitopes.png",
+    "linkText": "Colab Potential Biomarker Candidates EDA",
+    "linkUrl": "https://colab.research.google.com/drive/1bUKLNEQ-OP277Sl1do-ry0BWl1UFis0d?usp=sharing"
+  }
+]

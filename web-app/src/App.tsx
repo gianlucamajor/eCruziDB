@@ -16,6 +16,7 @@ import MetricsModalRoute from "./components/modals/MetricsModalRoute";
 import ReleaseModalRoute from "./components/modals/ReleaseModalRoute";
 import ContactModalRoute from "./components/modals/ContactModalRoute";
 import MethodologyModalRoute from "./components/modals/MethodologyModalRoute";
+import EdaModalRoute from "./components/modals/EdaModalRoute";
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
   const [showAbout, setShowAbout] = useState(false);
   const [showFunding, setShowFunding] = useState(false);
   const [showTeam, setShowTeam] = useState(false);
+  const [showEda, setShowEda] = useState(false);
 
   return (
     <div style={{ width: "100vw", height: "100vh", overflow: "hidden" }}>
@@ -51,6 +53,7 @@ function App() {
               <Route path="/" element={null} />
               <Route path="/about" element={null} />
               <Route path="/methodology" element={null} />
+              <Route path="/eda" element={null} />
               <Route path="/downloads" element={null} />
               <Route path="/funding" element={null} />
               <Route path="/team" element={null} />
@@ -59,6 +62,7 @@ function App() {
             </Routes>
             <AboutModalRoute show={showAbout} onHide={() => setShowAbout(false)} />
             <MethodologyModalRoute show={showAbout} onHide={() => setShowAbout(false)} />
+            <EdaModalRoute show={showEda} onHide={() => setShowEda(false)} />
             <DownloadModalRoute show={showDownload} onHide={() => setShowDownload(false)} />
             <FundingModalRoute show={showFunding} onHide={() => setShowFunding(false)} />
             <TeamModalRoute show={showTeam} onHide={() => setShowTeam(false)} />
