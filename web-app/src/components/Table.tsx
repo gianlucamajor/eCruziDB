@@ -74,8 +74,8 @@ function Table() {
     },
     {
       name: (
-        <span title="Amino acid sequence identified as an epitope" style={{ cursor: "help" }}>
-          Epitope
+        <span title="Predicted Epitopes (PEs) - Amino acid sequence identified as an epitope" style={{ cursor: "help" }}>
+          Predicted Epitopes
         </span>
       ),
       selector: (row: Epitope) => row.Epitope ?? "",
@@ -131,8 +131,8 @@ function Table() {
     },
     {
       name: (
-        <span title="Number and loci of genomic regions associated (mapped by inserts) with this epitope" style={{ cursor: "help" }}>
-          Genomic Regions
+        <span title="Antigenic Genomic Regions - Number and loci of genomic regions mapped by DNA inserts" style={{ cursor: "help" }}>
+          AGRs
         </span>
       ),
       selector: (row: Epitope) => row["Number of Genomic Regions"] ?? "",
