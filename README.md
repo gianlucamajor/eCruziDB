@@ -1,45 +1,7 @@
-# Trypanosoma cruzi Epitopes Database Project (eCruziDB)
+# eCruziDB: The T. cruzi Epitopes Database Project 
 
 This project is database of epitopes from T.cruzi coming phage display assay.
 
-## Project Structure
-
-```
-t-cruzi-epitopes-db
-├── README.md
-└── web-app
-    ├── eslint.config.js
-    ├── index.html
-    ├── package.json
-    ├── package-lock.json
-    ├── public
-    │   ├── data
-    │   │   └── epitopes-data.json
-    │   └── favicon.ico
-    ├── README.md
-    ├── src
-    │   ├── App.css
-    │   ├── App.tsx
-    │   ├── assets
-    │   │   └── react.svg
-    │   ├── components
-    │   │   ├── FeaturesCell.tsx
-    │   │   ├── FeaturesModal.tsx
-    │   │   ├── PeptidesCell.tsx
-    │   │   ├── PeptidesModal.tsx
-    │   │   ├── SearchBar.tsx
-    │   │   └── Table.tsx
-    │   ├── index.css
-    │   ├── main.tsx
-    │   ├── types
-    │   │   ├── Epitope.ts
-    │   │   └── User.ts
-    │   └── vite-env.d.ts
-    ├── tsconfig.app.json
-    ├── tsconfig.json
-    ├── tsconfig.node.json
-    └── vite.config.ts
-```
 
 ## Setup Instructions
 

@@ -12,7 +12,7 @@ const GenomicRegionsCell: React.FC<Props> = ({ count, regions, onShow }) => (
     {Array.isArray(regions) && regions.length > 0 && (
       <button
         style={{ background: "none", border: "none", marginLeft: 8, cursor: "pointer" }}
-        title="Show Genomic Regions"
+        title="Show AGRs"
         onClick={e => {
           e.stopPropagation();
           onShow();
