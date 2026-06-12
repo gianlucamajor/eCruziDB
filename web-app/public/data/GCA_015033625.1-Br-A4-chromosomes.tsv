@@ -1,0 +1,403 @@
+Assembly Accession	Assembly-unit name	Chromosome name	GC Count	GC Percent	GenBank seq accession	Molecule type	Ordering	RefSeq seq accession	Role	Seq length	UCSC style name	Unlocalized Count	Sequence name
+GCA_015033625.1	Primary Assembly	1	1353675	49.5	CM026583.1	Chromosome			assembled-molecule	2738928			TcBrA4_Contig3
+GCA_015033625.1	Primary Assembly	2	1041585	52.5	CM026584.1	Chromosome			assembled-molecule	1986034			TcBrA4_Contig6
+GCA_015033625.1	Primary Assembly	3	866624	49	CM026585.1	Chromosome			assembled-molecule	1768708			TcBrA4_Contig41
+GCA_015033625.1	Primary Assembly	4	823674	49	CM026586.1	Chromosome			assembled-molecule	1676910			TcBrA4_Contig121
+GCA_015033625.1	Primary Assembly	5	746250	50	CM026587.1	Chromosome			assembled-molecule	1492459			TcBrA4_Contig53
+GCA_015033625.1	Primary Assembly	6	746448	52.5	CM026588.1	Chromosome			assembled-molecule	1421388			TcBrA4_Contig142
+GCA_015033625.1	Primary Assembly	7	681240	50	CM026589.1	Chromosome			assembled-molecule	1369405			TcBrA4_Contig84
+GCA_015033625.1	Primary Assembly	8	671698	50.5	CM026590.1	Chromosome			assembled-molecule	1336822			TcBrA4_Contig42
+GCA_015033625.1	Primary Assembly	9	599049	52	CM026591.1	Chromosome			assembled-molecule	1155514			TcBrA4_Contig58
+GCA_015033625.1	Primary Assembly	10	531420	48.5	CM026592.1	Chromosome			assembled-molecule	1097740			TcBrA4_Contig70
+GCA_015033625.1	Primary Assembly	11	564104	52.5	CM026593.1	Chromosome			assembled-molecule	1076255			TcBrA4_Contig407
+GCA_015033625.1	Primary Assembly	12	553528	53	CM026594.1	Chromosome			assembled-molecule	1041209			TcBrA4_Contig20
+GCA_015033625.1	Primary Assembly	13	501930	51	CM026595.1	Chromosome			assembled-molecule	982025			TcBrA4_Contig21
+GCA_015033625.1	Primary Assembly	14	489936	50	CM026596.1	Chromosome			assembled-molecule	975858			TcBrA4_Contig89
+GCA_015033625.1	Primary Assembly	15	472189	48.5	CM026597.1	Chromosome			assembled-molecule	969620			TcBrA4_Contig147
+GCA_015033625.1	Primary Assembly	16	462826	50	CM026598.1	Chromosome			assembled-molecule	927191			TcBrA4_Contig163
+GCA_015033625.1	Primary Assembly	17	477264	52	CM026599.1	Chromosome			assembled-molecule	914771			TcBrA4_Contig92
+GCA_015033625.1	Primary Assembly	18	466008	51	CM026600.1	Chromosome			assembled-molecule	909794			TcBrA4_Contig40
+GCA_015033625.1	Primary Assembly	19	457781	51	CM026601.1	Chromosome			assembled-molecule	902532			TcBrA4_Contig60
+GCA_015033625.1	Primary Assembly	20	446560	53	CM026602.1	Chromosome			assembled-molecule	846588			TcBrA4_Contig33
+GCA_015033625.1	Primary Assembly	21	429670	52.5	CM026603.1	Chromosome			assembled-molecule	820352			TcBrA4_Contig14
+GCA_015033625.1	Primary Assembly	22	418075	51	CM026604.1	Chromosome			assembled-molecule	815970			TcBrA4_Contig12
+GCA_015033625.1	Primary Assembly	23	414161	51	CM026605.1	Chromosome			assembled-molecule	812063			TcBrA4_Contig38
+GCA_015033625.1	Primary Assembly	24	401130	51.5	CM026606.1	Chromosome			assembled-molecule	778187			TcBrA4_Contig16
+GCA_015033625.1	Primary Assembly	25	402421	54.5	CM026607.1	Chromosome			assembled-molecule	742617			TcBrA4_Contig137
+GCA_015033625.1	Primary Assembly	26	388002	53	CM026608.1	Chromosome			assembled-molecule	731747			TcBrA4_Contig109
+GCA_015033625.1	Primary Assembly	27	369544	51.5	CM026609.1	Chromosome			assembled-molecule	716856			TcBrA4_Contig47
+GCA_015033625.1	Primary Assembly	28	364455	51	CM026610.1	Chromosome			assembled-molecule	711759			TcBrA4_Contig45
+GCA_015033625.1	Primary Assembly	29	329467	50	CM026611.1	Chromosome			assembled-molecule	660991			TcBrA4_Contig108
+GCA_015033625.1	Primary Assembly	30	342499	52	CM026612.1	Chromosome			assembled-molecule	660739			TcBrA4_Contig128
+GCA_015033625.1	Primary Assembly	31	302865	50.5	CM026613.1	Chromosome			assembled-molecule	601716			TcBrA4_Contig100
+GCA_015033625.1	Primary Assembly	32	305227	51.5	CM026614.1	Chromosome			assembled-molecule	590954			TcBrA4_Contig49
+GCA_015033625.1	Primary Assembly	33	307766	53.5	CM026615.1	Chromosome			assembled-molecule	574917			TcBrA4_Contig61
+GCA_015033625.1	Primary Assembly	34	145508	51	CM026616.1	Chromosome			assembled-molecule	285003			TcBrA4_Contig17
+GCA_015033625.1	Primary Assembly	35	131702	54	CM026617.1	Chromosome			assembled-molecule	243420			TcBrA4_Contig30
+GCA_015033625.1	Primary Assembly	36	122829	53	CM026618.1	Chromosome			assembled-molecule	231406			TcBrA4_Contig125
+GCA_015033625.1	Primary Assembly	37	115919	53.5	CM026619.1	Chromosome			assembled-molecule	216495			TcBrA4_Contig193
+GCA_015033625.1	Primary Assembly	38	91428	55	CM026620.1	Chromosome			assembled-molecule	166627			TcBrA4_Contig99
+GCA_015033625.1	Primary Assembly	39	87912	54.5	CM026621.1	Chromosome			assembled-molecule	160921			TcBrA4_Contig0
+GCA_015033625.1	Primary Assembly	40	82136	53	CM026622.1	Chromosome			assembled-molecule	155078			TcBrA4_Contig104
+GCA_015033625.1	Primary Assembly	41	77427	53	CM026623.1	Chromosome			assembled-molecule	146158			TcBrA4_Contig236
+GCA_015033625.1	Primary Assembly	42	75186	53	CM026624.1	Chromosome			assembled-molecule	141754			TcBrA4_Contig9
+GCA_015033625.1	Primary Assembly	43	75096	53	CM026625.1	Chromosome			assembled-molecule	141550			TcBrA4_Contig66
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000002.1	Chromosome			unplaced-scaffold	27086			TcBrA4_Contig101
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000003.1	Chromosome			unplaced-scaffold	15041			TcBrA4_Contig102
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000004.1	Chromosome			unplaced-scaffold	15017			TcBrA4_Contig103
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000006.1	Chromosome			unplaced-scaffold	26761			TcBrA4_Contig105
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000007.1	Chromosome			unplaced-scaffold	26926			TcBrA4_Contig106
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000008.1	Chromosome			unplaced-scaffold	19019			TcBrA4_Contig107
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000009.1	Chromosome			unplaced-scaffold	28291			TcBrA4_Contig10
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000010.1	Chromosome			unplaced-scaffold	24713			TcBrA4_Contig110
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000011.1	Chromosome			unplaced-scaffold	795			TcBrA4_Contig111
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000012.1	Chromosome			unplaced-scaffold	72942			TcBrA4_Contig112
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000013.1	Chromosome			unplaced-scaffold	13975			TcBrA4_Contig113
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000014.1	Chromosome			unplaced-scaffold	82398			TcBrA4_Contig114
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000015.1	Chromosome			unplaced-scaffold	14178			TcBrA4_Contig115
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000016.1	Chromosome			unplaced-scaffold	17593			TcBrA4_Contig116
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000017.1	Chromosome			unplaced-scaffold	19769			TcBrA4_Contig117
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000018.1	Chromosome			unplaced-scaffold	24571			TcBrA4_Contig118
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000019.1	Chromosome			unplaced-scaffold	19636			TcBrA4_Contig119
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000020.1	Chromosome			unplaced-scaffold	14285			TcBrA4_Contig11
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000021.1	Chromosome			unplaced-scaffold	74071			TcBrA4_Contig120
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000022.1	Chromosome			unplaced-scaffold	9532			TcBrA4_Contig122
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000023.1	Chromosome			unplaced-scaffold	19206			TcBrA4_Contig123
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000024.1	Chromosome			unplaced-scaffold	18721			TcBrA4_Contig124
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000026.1	Chromosome			unplaced-scaffold	21132			TcBrA4_Contig126
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000027.1	Chromosome			unplaced-scaffold	14092			TcBrA4_Contig127
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000028.1	Chromosome			unplaced-scaffold	10992			TcBrA4_Contig129
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000029.1	Chromosome			unplaced-scaffold	19880			TcBrA4_Contig130
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000030.1	Chromosome			unplaced-scaffold	13107			TcBrA4_Contig132
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000031.1	Chromosome			unplaced-scaffold	31489			TcBrA4_Contig133
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000032.1	Chromosome			unplaced-scaffold	6657			TcBrA4_Contig134
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000033.1	Chromosome			unplaced-scaffold	43950			TcBrA4_Contig135
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000034.1	Chromosome			unplaced-scaffold	15988			TcBrA4_Contig136
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000036.1	Chromosome			unplaced-scaffold	8636			TcBrA4_Contig138
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000037.1	Chromosome			unplaced-scaffold	18873			TcBrA4_Contig139
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000038.1	Chromosome			unplaced-scaffold	57057			TcBrA4_Contig13
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000039.1	Chromosome			unplaced-scaffold	125028			TcBrA4_Contig140
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000040.1	Chromosome			unplaced-scaffold	5949			TcBrA4_Contig141
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000041.1	Chromosome			unplaced-scaffold	29549			TcBrA4_Contig143
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000042.1	Chromosome			unplaced-scaffold	1678			TcBrA4_Contig144
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000043.1	Chromosome			unplaced-scaffold	31690			TcBrA4_Contig145
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000044.1	Chromosome			unplaced-scaffold	13732			TcBrA4_Contig146
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000045.1	Chromosome			unplaced-scaffold	17034			TcBrA4_Contig148
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000046.1	Chromosome			unplaced-scaffold	46379			TcBrA4_Contig149
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000048.1	Chromosome			unplaced-scaffold	21222			TcBrA4_Contig150
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000049.1	Chromosome			unplaced-scaffold	22865			TcBrA4_Contig151
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000050.1	Chromosome			unplaced-scaffold	38861			TcBrA4_Contig152
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000051.1	Chromosome			unplaced-scaffold	9044			TcBrA4_Contig153
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000052.1	Chromosome			unplaced-scaffold	80532			TcBrA4_Contig154
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000053.1	Chromosome			unplaced-scaffold	25152			TcBrA4_Contig155
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000054.1	Chromosome			unplaced-scaffold	86469			TcBrA4_Contig156
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000055.1	Chromosome			unplaced-scaffold	19241			TcBrA4_Contig157
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000056.1	Chromosome			unplaced-scaffold	9387			TcBrA4_Contig158
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000057.1	Chromosome			unplaced-scaffold	23521			TcBrA4_Contig159
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000058.1	Chromosome			unplaced-scaffold	19592			TcBrA4_Contig15
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000059.1	Chromosome			unplaced-scaffold	14519			TcBrA4_Contig160
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000060.1	Chromosome			unplaced-scaffold	67961			TcBrA4_Contig161
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000061.1	Chromosome			unplaced-scaffold	29622			TcBrA4_Contig162
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000062.1	Chromosome			unplaced-scaffold	18905			TcBrA4_Contig164
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000063.1	Chromosome			unplaced-scaffold	13462			TcBrA4_Contig165
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000064.1	Chromosome			unplaced-scaffold	23134			TcBrA4_Contig166
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000065.1	Chromosome			unplaced-scaffold	31539			TcBrA4_Contig167
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000066.1	Chromosome			unplaced-scaffold	14475			TcBrA4_Contig168
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000067.1	Chromosome			unplaced-scaffold	17277			TcBrA4_Contig169
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000068.1	Chromosome			unplaced-scaffold	84973			TcBrA4_Contig170
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000069.1	Chromosome			unplaced-scaffold	20182			TcBrA4_Contig171
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000070.1	Chromosome			unplaced-scaffold	31073			TcBrA4_Contig172
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000071.1	Chromosome			unplaced-scaffold	13298			TcBrA4_Contig173
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000072.1	Chromosome			unplaced-scaffold	23269			TcBrA4_Contig174
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000073.1	Chromosome			unplaced-scaffold	14824			TcBrA4_Contig176
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000074.1	Chromosome			unplaced-scaffold	23288			TcBrA4_Contig177
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000075.1	Chromosome			unplaced-scaffold	20236			TcBrA4_Contig178
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000076.1	Chromosome			unplaced-scaffold	28704			TcBrA4_Contig179
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000078.1	Chromosome			unplaced-scaffold	6620			TcBrA4_Contig181
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000079.1	Chromosome			unplaced-scaffold	24941			TcBrA4_Contig182
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000080.1	Chromosome			unplaced-scaffold	38160			TcBrA4_Contig183
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000081.1	Chromosome			unplaced-scaffold	14000			TcBrA4_Contig184
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000082.1	Chromosome			unplaced-scaffold	4195			TcBrA4_Contig185
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000083.1	Chromosome			unplaced-scaffold	12988			TcBrA4_Contig186
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000084.1	Chromosome			unplaced-scaffold	33656			TcBrA4_Contig187
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000085.1	Chromosome			unplaced-scaffold	62099			TcBrA4_Contig188
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000086.1	Chromosome			unplaced-scaffold	7181			TcBrA4_Contig189
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000087.1	Chromosome			unplaced-scaffold	58945			TcBrA4_Contig18
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000088.1	Chromosome			unplaced-scaffold	2437			TcBrA4_Contig190
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000089.1	Chromosome			unplaced-scaffold	18768			TcBrA4_Contig191
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000090.1	Chromosome			unplaced-scaffold	6156			TcBrA4_Contig192
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000092.1	Chromosome			unplaced-scaffold	16943			TcBrA4_Contig194
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000093.1	Chromosome			unplaced-scaffold	14050			TcBrA4_Contig195
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000094.1	Chromosome			unplaced-scaffold	17761			TcBrA4_Contig196
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000095.1	Chromosome			unplaced-scaffold	19468			TcBrA4_Contig197
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000096.1	Chromosome			unplaced-scaffold	18360			TcBrA4_Contig198
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000097.1	Chromosome			unplaced-scaffold	13368			TcBrA4_Contig199
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000098.1	Chromosome			unplaced-scaffold	33546			TcBrA4_Contig19
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000099.1	Chromosome			unplaced-scaffold	20572			TcBrA4_Contig1
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000100.1	Chromosome			unplaced-scaffold	14239			TcBrA4_Contig200
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000101.1	Chromosome			unplaced-scaffold	9384			TcBrA4_Contig201
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000102.1	Chromosome			unplaced-scaffold	21732			TcBrA4_Contig202
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000103.1	Chromosome			unplaced-scaffold	14973			TcBrA4_Contig203
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000104.1	Chromosome			unplaced-scaffold	14416			TcBrA4_Contig204
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000105.1	Chromosome			unplaced-scaffold	14998			TcBrA4_Contig205
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000106.1	Chromosome			unplaced-scaffold	11114			TcBrA4_Contig206
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000107.1	Chromosome			unplaced-scaffold	14829			TcBrA4_Contig207
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000108.1	Chromosome			unplaced-scaffold	20434			TcBrA4_Contig208
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000109.1	Chromosome			unplaced-scaffold	135914			TcBrA4_Contig209
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000110.1	Chromosome			unplaced-scaffold	7212			TcBrA4_Contig210
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000111.1	Chromosome			unplaced-scaffold	30562			TcBrA4_Contig211
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000112.1	Chromosome			unplaced-scaffold	31451			TcBrA4_Contig212
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000113.1	Chromosome			unplaced-scaffold	17919			TcBrA4_Contig213
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000114.1	Chromosome			unplaced-scaffold	17142			TcBrA4_Contig214
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000115.1	Chromosome			unplaced-scaffold	27087			TcBrA4_Contig215
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000116.1	Chromosome			unplaced-scaffold	23701			TcBrA4_Contig216
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000117.1	Chromosome			unplaced-scaffold	18584			TcBrA4_Contig217
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000118.1	Chromosome			unplaced-scaffold	16511			TcBrA4_Contig218
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000119.1	Chromosome			unplaced-scaffold	14014			TcBrA4_Contig219
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000121.1	Chromosome			unplaced-scaffold	67617			TcBrA4_Contig220
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000122.1	Chromosome			unplaced-scaffold	18740			TcBrA4_Contig221
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000123.1	Chromosome			unplaced-scaffold	17391			TcBrA4_Contig222
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000124.1	Chromosome			unplaced-scaffold	16083			TcBrA4_Contig223
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000125.1	Chromosome			unplaced-scaffold	30842			TcBrA4_Contig224
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000126.1	Chromosome			unplaced-scaffold	19865			TcBrA4_Contig226
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000127.1	Chromosome			unplaced-scaffold	19291			TcBrA4_Contig227
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000128.1	Chromosome			unplaced-scaffold	15377			TcBrA4_Contig228
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000129.1	Chromosome			unplaced-scaffold	10156			TcBrA4_Contig229
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000130.1	Chromosome			unplaced-scaffold	44726			TcBrA4_Contig22
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000131.1	Chromosome			unplaced-scaffold	44998			TcBrA4_Contig230
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000132.1	Chromosome			unplaced-scaffold	14178			TcBrA4_Contig231
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000133.1	Chromosome			unplaced-scaffold	25930			TcBrA4_Contig232
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000134.1	Chromosome			unplaced-scaffold	15101			TcBrA4_Contig233
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000135.1	Chromosome			unplaced-scaffold	29694			TcBrA4_Contig234
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000136.1	Chromosome			unplaced-scaffold	6348			TcBrA4_Contig235
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000138.1	Chromosome			unplaced-scaffold	19586			TcBrA4_Contig237
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000139.1	Chromosome			unplaced-scaffold	16503			TcBrA4_Contig238
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000140.1	Chromosome			unplaced-scaffold	24070			TcBrA4_Contig239
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000141.1	Chromosome			unplaced-scaffold	18834			TcBrA4_Contig23
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000142.1	Chromosome			unplaced-scaffold	32680			TcBrA4_Contig240
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000143.1	Chromosome			unplaced-scaffold	28769			TcBrA4_Contig241
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000144.1	Chromosome			unplaced-scaffold	13528			TcBrA4_Contig242
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000145.1	Chromosome			unplaced-scaffold	5607			TcBrA4_Contig243
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000146.1	Chromosome			unplaced-scaffold	21516			TcBrA4_Contig244
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000147.1	Chromosome			unplaced-scaffold	36430			TcBrA4_Contig245
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000148.1	Chromosome			unplaced-scaffold	24081			TcBrA4_Contig246
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000149.1	Chromosome			unplaced-scaffold	19584			TcBrA4_Contig247
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000150.1	Chromosome			unplaced-scaffold	45848			TcBrA4_Contig248
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000151.1	Chromosome			unplaced-scaffold	19766			TcBrA4_Contig249
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000152.1	Chromosome			unplaced-scaffold	29739			TcBrA4_Contig24
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000153.1	Chromosome			unplaced-scaffold	14023			TcBrA4_Contig250
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000154.1	Chromosome			unplaced-scaffold	18603			TcBrA4_Contig251
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000155.1	Chromosome			unplaced-scaffold	14620			TcBrA4_Contig252
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000156.1	Chromosome			unplaced-scaffold	17135			TcBrA4_Contig253
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000157.1	Chromosome			unplaced-scaffold	22812			TcBrA4_Contig254
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000158.1	Chromosome			unplaced-scaffold	9547			TcBrA4_Contig255
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000159.1	Chromosome			unplaced-scaffold	12563			TcBrA4_Contig256
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000160.1	Chromosome			unplaced-scaffold	28718			TcBrA4_Contig257
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000161.1	Chromosome			unplaced-scaffold	17003			TcBrA4_Contig258
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000162.1	Chromosome			unplaced-scaffold	38759			TcBrA4_Contig259
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000163.1	Chromosome			unplaced-scaffold	10142			TcBrA4_Contig25
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000164.1	Chromosome			unplaced-scaffold	14392			TcBrA4_Contig260
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000165.1	Chromosome			unplaced-scaffold	13256			TcBrA4_Contig261
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000166.1	Chromosome			unplaced-scaffold	16186			TcBrA4_Contig262
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000167.1	Chromosome			unplaced-scaffold	16099			TcBrA4_Contig263
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000168.1	Chromosome			unplaced-scaffold	31337			TcBrA4_Contig264
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000169.1	Chromosome			unplaced-scaffold	12611			TcBrA4_Contig265
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000170.1	Chromosome			unplaced-scaffold	25325			TcBrA4_Contig266
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000171.1	Chromosome			unplaced-scaffold	12516			TcBrA4_Contig267
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000172.1	Chromosome			unplaced-scaffold	19084			TcBrA4_Contig268
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000173.1	Chromosome			unplaced-scaffold	31364			TcBrA4_Contig269
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000174.1	Chromosome			unplaced-scaffold	20715			TcBrA4_Contig26
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000175.1	Chromosome			unplaced-scaffold	10016			TcBrA4_Contig270
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000176.1	Chromosome			unplaced-scaffold	25083			TcBrA4_Contig271
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000177.1	Chromosome			unplaced-scaffold	12177			TcBrA4_Contig272
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000178.1	Chromosome			unplaced-scaffold	19419			TcBrA4_Contig273
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000179.1	Chromosome			unplaced-scaffold	17162			TcBrA4_Contig274
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000180.1	Chromosome			unplaced-scaffold	15485			TcBrA4_Contig275
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000181.1	Chromosome			unplaced-scaffold	26231			TcBrA4_Contig276
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000182.1	Chromosome			unplaced-scaffold	26495			TcBrA4_Contig277
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000183.1	Chromosome			unplaced-scaffold	5604			TcBrA4_Contig278
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000184.1	Chromosome			unplaced-scaffold	12683			TcBrA4_Contig279
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000185.1	Chromosome			unplaced-scaffold	15727			TcBrA4_Contig27
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000186.1	Chromosome			unplaced-scaffold	23076			TcBrA4_Contig280
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000187.1	Chromosome			unplaced-scaffold	15201			TcBrA4_Contig281
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000188.1	Chromosome			unplaced-scaffold	20796			TcBrA4_Contig282
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000189.1	Chromosome			unplaced-scaffold	21129			TcBrA4_Contig283
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000190.1	Chromosome			unplaced-scaffold	21694			TcBrA4_Contig284
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000191.1	Chromosome			unplaced-scaffold	17322			TcBrA4_Contig285
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000192.1	Chromosome			unplaced-scaffold	126612			TcBrA4_Contig286
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000193.1	Chromosome			unplaced-scaffold	14211			TcBrA4_Contig287
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000194.1	Chromosome			unplaced-scaffold	33960			TcBrA4_Contig288
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000195.1	Chromosome			unplaced-scaffold	15411			TcBrA4_Contig289
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000196.1	Chromosome			unplaced-scaffold	20069			TcBrA4_Contig28
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000197.1	Chromosome			unplaced-scaffold	14688			TcBrA4_Contig290
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000198.1	Chromosome			unplaced-scaffold	27781			TcBrA4_Contig291
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000199.1	Chromosome			unplaced-scaffold	20540			TcBrA4_Contig292
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000200.1	Chromosome			unplaced-scaffold	5452			TcBrA4_Contig293
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000201.1	Chromosome			unplaced-scaffold	14240			TcBrA4_Contig294
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000202.1	Chromosome			unplaced-scaffold	49204			TcBrA4_Contig295
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000203.1	Chromosome			unplaced-scaffold	11972			TcBrA4_Contig296
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000204.1	Chromosome			unplaced-scaffold	14000			TcBrA4_Contig297
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000205.1	Chromosome			unplaced-scaffold	21028			TcBrA4_Contig298
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000206.1	Chromosome			unplaced-scaffold	22747			TcBrA4_Contig299
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000207.1	Chromosome			unplaced-scaffold	138880			TcBrA4_Contig29
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000208.1	Chromosome			unplaced-scaffold	11155			TcBrA4_Contig2
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000209.1	Chromosome			unplaced-scaffold	28456			TcBrA4_Contig300
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000210.1	Chromosome			unplaced-scaffold	6679			TcBrA4_Contig301
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000211.1	Chromosome			unplaced-scaffold	16440			TcBrA4_Contig302
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000212.1	Chromosome			unplaced-scaffold	17710			TcBrA4_Contig303
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000213.1	Chromosome			unplaced-scaffold	22046			TcBrA4_Contig305
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000214.1	Chromosome			unplaced-scaffold	28687			TcBrA4_Contig306
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000215.1	Chromosome			unplaced-scaffold	21364			TcBrA4_Contig307
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000216.1	Chromosome			unplaced-scaffold	13787			TcBrA4_Contig308
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000217.1	Chromosome			unplaced-scaffold	18675			TcBrA4_Contig309
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000219.1	Chromosome			unplaced-scaffold	7428			TcBrA4_Contig310
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000220.1	Chromosome			unplaced-scaffold	703			TcBrA4_Contig311
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000221.1	Chromosome			unplaced-scaffold	5250			TcBrA4_Contig312
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000222.1	Chromosome			unplaced-scaffold	20258			TcBrA4_Contig313
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000223.1	Chromosome			unplaced-scaffold	85181			TcBrA4_Contig314
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000224.1	Chromosome			unplaced-scaffold	20683			TcBrA4_Contig315
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000225.1	Chromosome			unplaced-scaffold	13077			TcBrA4_Contig316
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000226.1	Chromosome			unplaced-scaffold	42896			TcBrA4_Contig317
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000227.1	Chromosome			unplaced-scaffold	20940			TcBrA4_Contig318
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000228.1	Chromosome			unplaced-scaffold	29137			TcBrA4_Contig319
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000229.1	Chromosome			unplaced-scaffold	12400			TcBrA4_Contig31
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000230.1	Chromosome			unplaced-scaffold	34437			TcBrA4_Contig320
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000231.1	Chromosome			unplaced-scaffold	24640			TcBrA4_Contig321
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000232.1	Chromosome			unplaced-scaffold	31677			TcBrA4_Contig322
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000233.1	Chromosome			unplaced-scaffold	13681			TcBrA4_Contig323
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000234.1	Chromosome			unplaced-scaffold	19916			TcBrA4_Contig324
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000235.1	Chromosome			unplaced-scaffold	11750			TcBrA4_Contig325
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000236.1	Chromosome			unplaced-scaffold	9664			TcBrA4_Contig326
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000237.1	Chromosome			unplaced-scaffold	19265			TcBrA4_Contig327
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000238.1	Chromosome			unplaced-scaffold	15807			TcBrA4_Contig328
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000239.1	Chromosome			unplaced-scaffold	31973			TcBrA4_Contig329
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000240.1	Chromosome			unplaced-scaffold	43829			TcBrA4_Contig32
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000241.1	Chromosome			unplaced-scaffold	94755			TcBrA4_Contig330
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000242.1	Chromosome			unplaced-scaffold	7691			TcBrA4_Contig332
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000243.1	Chromosome			unplaced-scaffold	5689			TcBrA4_Contig333
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000244.1	Chromosome			unplaced-scaffold	9435			TcBrA4_Contig334
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000245.1	Chromosome			unplaced-scaffold	73969			TcBrA4_Contig335
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000246.1	Chromosome			unplaced-scaffold	15514			TcBrA4_Contig336
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000247.1	Chromosome			unplaced-scaffold	17453			TcBrA4_Contig337
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000248.1	Chromosome			unplaced-scaffold	17641			TcBrA4_Contig338
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000249.1	Chromosome			unplaced-scaffold	14165			TcBrA4_Contig339
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000251.1	Chromosome			unplaced-scaffold	34403			TcBrA4_Contig340
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000252.1	Chromosome			unplaced-scaffold	18955			TcBrA4_Contig341
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000253.1	Chromosome			unplaced-scaffold	14890			TcBrA4_Contig342
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000254.1	Chromosome			unplaced-scaffold	22543			TcBrA4_Contig343
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000255.1	Chromosome			unplaced-scaffold	16677			TcBrA4_Contig344
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000256.1	Chromosome			unplaced-scaffold	13134			TcBrA4_Contig345
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000257.1	Chromosome			unplaced-scaffold	23456			TcBrA4_Contig346
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000258.1	Chromosome			unplaced-scaffold	19669			TcBrA4_Contig347
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000259.1	Chromosome			unplaced-scaffold	30314			TcBrA4_Contig348
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000260.1	Chromosome			unplaced-scaffold	17006			TcBrA4_Contig349
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000261.1	Chromosome			unplaced-scaffold	14934			TcBrA4_Contig34
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000262.1	Chromosome			unplaced-scaffold	58309			TcBrA4_Contig350
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000263.1	Chromosome			unplaced-scaffold	6514			TcBrA4_Contig351
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000264.1	Chromosome			unplaced-scaffold	32101			TcBrA4_Contig352
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000265.1	Chromosome			unplaced-scaffold	10641			TcBrA4_Contig353
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000266.1	Chromosome			unplaced-scaffold	20448			TcBrA4_Contig354
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000267.1	Chromosome			unplaced-scaffold	14227			TcBrA4_Contig355
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000268.1	Chromosome			unplaced-scaffold	15321			TcBrA4_Contig356
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000269.1	Chromosome			unplaced-scaffold	12861			TcBrA4_Contig357
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000270.1	Chromosome			unplaced-scaffold	26225			TcBrA4_Contig358
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000271.1	Chromosome			unplaced-scaffold	14383			TcBrA4_Contig359
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000272.1	Chromosome			unplaced-scaffold	20028			TcBrA4_Contig35
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000273.1	Chromosome			unplaced-scaffold	28012			TcBrA4_Contig360
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000274.1	Chromosome			unplaced-scaffold	23720			TcBrA4_Contig361
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000275.1	Chromosome			unplaced-scaffold	59123			TcBrA4_Contig362
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000276.1	Chromosome			unplaced-scaffold	11042			TcBrA4_Contig363
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000277.1	Chromosome			unplaced-scaffold	8861			TcBrA4_Contig364
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000278.1	Chromosome			unplaced-scaffold	15458			TcBrA4_Contig365
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000279.1	Chromosome			unplaced-scaffold	25659			TcBrA4_Contig366
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000280.1	Chromosome			unplaced-scaffold	31539			TcBrA4_Contig367
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000281.1	Chromosome			unplaced-scaffold	21596			TcBrA4_Contig368
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000282.1	Chromosome			unplaced-scaffold	22467			TcBrA4_Contig369
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000283.1	Chromosome			unplaced-scaffold	63214			TcBrA4_Contig36
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000284.1	Chromosome			unplaced-scaffold	34531			TcBrA4_Contig370
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000285.1	Chromosome			unplaced-scaffold	11607			TcBrA4_Contig371
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000286.1	Chromosome			unplaced-scaffold	20870			TcBrA4_Contig372
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000287.1	Chromosome			unplaced-scaffold	12405			TcBrA4_Contig373
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000288.1	Chromosome			unplaced-scaffold	17515			TcBrA4_Contig374
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000289.1	Chromosome			unplaced-scaffold	19708			TcBrA4_Contig375
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000290.1	Chromosome			unplaced-scaffold	33256			TcBrA4_Contig376
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000291.1	Chromosome			unplaced-scaffold	6190			TcBrA4_Contig377
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000292.1	Chromosome			unplaced-scaffold	25844			TcBrA4_Contig378
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000293.1	Chromosome			unplaced-scaffold	31269			TcBrA4_Contig379
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000294.1	Chromosome			unplaced-scaffold	27220			TcBrA4_Contig37
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000295.1	Chromosome			unplaced-scaffold	17936			TcBrA4_Contig380
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000296.1	Chromosome			unplaced-scaffold	18009			TcBrA4_Contig381
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000297.1	Chromosome			unplaced-scaffold	13936			TcBrA4_Contig382
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000298.1	Chromosome			unplaced-scaffold	15878			TcBrA4_Contig383
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000299.1	Chromosome			unplaced-scaffold	18813			TcBrA4_Contig384
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000300.1	Chromosome			unplaced-scaffold	25338			TcBrA4_Contig385
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000301.1	Chromosome			unplaced-scaffold	22921			TcBrA4_Contig386
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000302.1	Chromosome			unplaced-scaffold	20833			TcBrA4_Contig387
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000303.1	Chromosome			unplaced-scaffold	15938			TcBrA4_Contig388
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000304.1	Chromosome			unplaced-scaffold	19495			TcBrA4_Contig389
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000306.1	Chromosome			unplaced-scaffold	18388			TcBrA4_Contig390
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000307.1	Chromosome			unplaced-scaffold	15595			TcBrA4_Contig391
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000308.1	Chromosome			unplaced-scaffold	21990			TcBrA4_Contig392
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000309.1	Chromosome			unplaced-scaffold	22153			TcBrA4_Contig393
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000310.1	Chromosome			unplaced-scaffold	23327			TcBrA4_Contig394
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000311.1	Chromosome			unplaced-scaffold	18038			TcBrA4_Contig395
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000312.1	Chromosome			unplaced-scaffold	25181			TcBrA4_Contig396
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000313.1	Chromosome			unplaced-scaffold	7106			TcBrA4_Contig397
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000314.1	Chromosome			unplaced-scaffold	15905			TcBrA4_Contig398
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000315.1	Chromosome			unplaced-scaffold	22694			TcBrA4_Contig39
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000316.1	Chromosome			unplaced-scaffold	16077			TcBrA4_Contig400
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000317.1	Chromosome			unplaced-scaffold	22857			TcBrA4_Contig401
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000318.1	Chromosome			unplaced-scaffold	15517			TcBrA4_Contig402
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000319.1	Chromosome			unplaced-scaffold	10545			TcBrA4_Contig403
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000320.1	Chromosome			unplaced-scaffold	16928			TcBrA4_Contig404
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000321.1	Chromosome			unplaced-scaffold	31611			TcBrA4_Contig405
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000322.1	Chromosome			unplaced-scaffold	22959			TcBrA4_Contig406
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000323.1	Chromosome			unplaced-scaffold	17090			TcBrA4_Contig43
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000324.1	Chromosome			unplaced-scaffold	13464			TcBrA4_Contig44
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000325.1	Chromosome			unplaced-scaffold	24150			TcBrA4_Contig46
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000326.1	Chromosome			unplaced-scaffold	24057			TcBrA4_Contig48
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000327.1	Chromosome			unplaced-scaffold	23015			TcBrA4_Contig4
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000328.1	Chromosome			unplaced-scaffold	18202			TcBrA4_Contig50
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000329.1	Chromosome			unplaced-scaffold	23952			TcBrA4_Contig51
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000330.1	Chromosome			unplaced-scaffold	56908			TcBrA4_Contig52
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000331.1	Chromosome			unplaced-scaffold	59808			TcBrA4_Contig54
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000332.1	Chromosome			unplaced-scaffold	17886			TcBrA4_Contig55
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000333.1	Chromosome			unplaced-scaffold	19296			TcBrA4_Contig56
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000334.1	Chromosome			unplaced-scaffold	14131			TcBrA4_Contig57
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000335.1	Chromosome			unplaced-scaffold	11878			TcBrA4_Contig59
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000337.1	Chromosome			unplaced-scaffold	15934			TcBrA4_Contig62
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000338.1	Chromosome			unplaced-scaffold	21066			TcBrA4_Contig65
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000340.1	Chromosome			unplaced-scaffold	10477			TcBrA4_Contig67
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000341.1	Chromosome			unplaced-scaffold	24042			TcBrA4_Contig68
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000342.1	Chromosome			unplaced-scaffold	92254			TcBrA4_Contig69
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000343.1	Chromosome			unplaced-scaffold	22601			TcBrA4_Contig71
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000344.1	Chromosome			unplaced-scaffold	73998			TcBrA4_Contig72
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000345.1	Chromosome			unplaced-scaffold	34649			TcBrA4_Contig73
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000346.1	Chromosome			unplaced-scaffold	3473			TcBrA4_Contig74
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000347.1	Chromosome			unplaced-scaffold	12448			TcBrA4_Contig75
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000348.1	Chromosome			unplaced-scaffold	28443			TcBrA4_Contig76
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000349.1	Chromosome			unplaced-scaffold	9402			TcBrA4_Contig77
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000350.1	Chromosome			unplaced-scaffold	33272			TcBrA4_Contig78
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000351.1	Chromosome			unplaced-scaffold	16934			TcBrA4_Contig79
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000352.1	Chromosome			unplaced-scaffold	16463			TcBrA4_Contig7
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000353.1	Chromosome			unplaced-scaffold	9974			TcBrA4_Contig80
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000354.1	Chromosome			unplaced-scaffold	35238			TcBrA4_Contig81
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000355.1	Chromosome			unplaced-scaffold	6421			TcBrA4_Contig82
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000356.1	Chromosome			unplaced-scaffold	64622			TcBrA4_Contig83
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000357.1	Chromosome			unplaced-scaffold	18502			TcBrA4_Contig85
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000358.1	Chromosome			unplaced-scaffold	18832			TcBrA4_Contig86
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000359.1	Chromosome			unplaced-scaffold	56656			TcBrA4_Contig87
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000360.1	Chromosome			unplaced-scaffold	19224			TcBrA4_Contig88
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000362.1	Chromosome			unplaced-scaffold	6637			TcBrA4_Contig8
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000363.1	Chromosome			unplaced-scaffold	15072			TcBrA4_Contig90
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000364.1	Chromosome			unplaced-scaffold	17530			TcBrA4_Contig91
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000365.1	Chromosome			unplaced-scaffold	15453			TcBrA4_Contig93
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000366.1	Chromosome			unplaced-scaffold	21087			TcBrA4_Contig94
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000367.1	Chromosome			unplaced-scaffold	166935			TcBrA4_Contig95
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000368.1	Chromosome			unplaced-scaffold	28023			TcBrA4_Contig96
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000369.1	Chromosome			unplaced-scaffold	25610			TcBrA4_Contig97
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000370.1	Chromosome			unplaced-scaffold	15106			TcBrA4_Contig98
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000383.1	Chromosome			unplaced-scaffold	26682			TcBrA4_Contig175
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000385.1	Chromosome			unplaced-scaffold	26168			TcBrA4_Contig331
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000386.1	Chromosome			unplaced-scaffold	103134			TcBrA4_Contig399
+GCA_015033625.1	Primary Assembly	Un			WNWZ01000402.1	Chromosome			unplaced-scaffold	33280			TcBrA4_Contig64
