@@ -4,16 +4,24 @@
     "title": "Differential Reactivity of PE Analysis",
     "description": "Global profile of differential reactivity of predicted epitopes across clinical groups.",
     "imagePath": "img/differential-reactivity.png",
-    "linkText": "Colab Differential Reactivity of PE",
-    "linkUrl": "https://colab.research.google.com/gist/gianlucamajor/0b77e829e3f7b7f01f1a2d75376cef59/differential-reactivity-pe-by-clinical-groups-eda.ipynb"
+    "linkText": "Differential Reactivity of PE",
+    "linkUrl": "https://colab.research.google.com/github/gianlucamajor/eCruziDB/blob/main/eda/differential-reactivity-PE-by-clinical-groups-eda.ipynb"
   },
   {
     "id": "biomarker-candidates",
     "title": "Potential Biomarker Candidates",
     "description": "Pairwise scatter plots for the identification of potential biomarker candidates",
     "imagePath": "img/potential-biomarker-epitopes.png",
-    "linkText": "Colab Potential Biomarker Candidates",
-    "linkUrl": "https://colab.research.google.com/gist/gianlucamajor/94b56684f07be5fe15b5231e54861c36/potential-biomaker-candidates-eda.ipynb"
+    "linkText": "Potential Biomarker Candidates",
+    "linkUrl": "https://colab.research.google.com/github/gianlucamajor/eCruziDB/blob/main/eda/potential-biomaker-candidates-eda.ipynb"
+  },
+  {
+    "id": "AGRs",
+    "title": "Antigenic Genomic Regions (AGRs)",
+    "description": "Genome-wide distribution of AGRs",
+    "imagePath": "img/AGRs.png",
+    "linkText": "AGRs",
+    "linkUrl": "https://colab.research.google.com/github/gianlucamajor/eCruziDB/blob/main/eda/agrs-eda.ipynb"
   }
 
 ]

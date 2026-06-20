@@ -11,7 +11,19 @@ type ReleaseNote = {
   sourceOfData?: string;
 };
 
+
 const releaseNotes: ReleaseNote[] = [
+  {
+    version: "1.5.0",
+    date: "2026-06-20",
+    summary: "Minor improvements and epitopes-data update.",
+    features: [
+      "Update epitopes-data.json",
+      "Add new AGRs EDA",
+      "fix EDA links",
+    ],
+    sourceOfData: "epitopes-data.json (md5: e4de1b41f054cc1dce8cb1baf345d5c6) generated from epitopes list reported on 2025-09-25/RE-23-02-26 by epitope_reporter from Epizap:v0.6.0."
+  },
     {
     version: "1.4.0",
     date: "2025-17-13",

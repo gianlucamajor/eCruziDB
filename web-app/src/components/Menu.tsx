@@ -33,7 +33,7 @@ const Menu = ({ setStepsEnabled}: MenuProps) => (
             Start Tour
           </Nav.Link>
           <Nav.Link as={Link} to="/about">About</Nav.Link>
-          <Nav.Link as={Link} to="/methodology">Methodology</Nav.Link>
+          {/* <Nav.Link as={Link} to="/methodology">Methodology</Nav.Link> */}
           <Nav.Link as={Link} to="/eda">EDA</Nav.Link>
           <Nav.Link as={Link} to="/downloads">Downloads</Nav.Link>
           <Nav.Link as={Link} to="/team">Team</Nav.Link>
