@@ -8,6 +8,12 @@ type DownloadModalProps = {
 
 const files = [
   {
+    name: "epitopes-data.json",
+    description: "List all epitopes and metadata in json format",
+    md5hash: "e4de1b41f054cc1dce8cb1baf345d5c6",
+    path: "data/epitopes-data.json",
+  },
+  {
     name: "epitopes-data.fasta.zip",
     description: "List all epitope sequences in FASTA format",
     md5hash: "82e06ac41381fe6d6f3dbeea5459e29b",
