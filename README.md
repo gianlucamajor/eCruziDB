@@ -2,8 +2,13 @@
 
 This project is database of epitopes from T.cruzi coming phage display assay.
 
+## Quick Start
+### Usage on LBI
+<p>https://projetos.lbi.iq.usp.br/trypanosoma/ecruzidb/</p>
+and be happy! ;)
 
-## Setup Instructions
+
+## Dev Setup Instructions
 
 1. Clone the repository:
    ```
@@ -24,18 +29,19 @@ This project is database of epitopes from T.cruzi coming phage display assay.
    npm run dev
    ```
 
-## IGV-webapp
-```
-npx http-server -a localhost /home/gianluca/www/epizap
-http://localhost:8080/igv-webapp/?locus=CM026600.1:31354-31391
-```
-
-## Usage
-1. Building to production 
+5. Building to production 
    ```
    npm run build
    ```
-## Usage on LBI
+
+### DEV IGV-webapp 
+```
+npx http-server -a localhost $igv-webapp-dir$
+http://localhost:8080/igv-webapp/?locus=CM026600.1:31354-31391
+```
+
+
+### DEV Usage on LBI
 <p>This is required to enable show modal by urls. e.g /about or /downloads.</p>
 <p>Considering the production url as: https://projetos.lbi.iq.usp.br/trypanosoma/ecruzidb/</p>
 
