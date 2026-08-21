@@ -81,11 +81,32 @@ function Table() {
       selector: (row: Epitope) => row.Epitope ?? "",
       width: "400px",
       wrap: true,
-      cell: (row: Epitope) => (
-        <span className="epitope-col-cell" style={{ display: "block", width: "100%" }}>
-          {row.Epitope ?? ""}
-        </span>
-      ),
+      cell: (row: Epitope) => {
+        const peptideCount = Number(row["Number of Peptides"] ?? 0);
+        const hasMultiplePeptides = peptideCount > 1;
+
+        return (
+          <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", width: "100%", gap: "8px" }}>
+            <span className="epitope-col-cell" style={{ display: "block", flex: 1, minWidth: 0 }}>
+              {row.Epitope ?? ""}
+            </span>
+            <span
+              title={hasMultiplePeptides ? "PE: Supported by the consensus core of multiple peptides" : "AF: Supported by a single peptide"}
+              aria-label={hasMultiplePeptides ? "PE: Supported by the consensus core of multiple peptides" : "AF: Supported by a single peptide"}
+              style={{
+                display: "inline-block",
+                width: "10px",
+                height: "10px",
+                borderRadius: "3px",
+                backgroundColor: hasMultiplePeptides ? "#9ad8a6" : "#f2d9a3",
+                border: `1px solid ${hasMultiplePeptides ? "#5dbb73" : "#d9b36b"}`,
+                boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.5)",
+                flexShrink: 0,
+              }}
+            />
+          </div>
+        );
+      },
     },
     {
       name: (
