@@ -74,8 +74,8 @@ function Table() {
     },
     {
       name: (
-        <span title="Predicted Epitopes (PEs) - Amino acid sequence identified as an epitope" style={{ cursor: "help" }}>
-          Predicted Epitopes
+        <span title="Peptide reported as antigen fragment (AF) or predicted epitope (PE)" style={{ cursor: "help" }}>
+          AFs / PEs
         </span>
       ),
       selector: (row: Epitope) => row.Epitope ?? "",
