@@ -4,6 +4,7 @@ function FeaturesModal({
   features,
   epitope,
   epizapId,
+  numberOfPeptides,
   onClose,
 }: {
   features?: {
@@ -11,11 +12,13 @@ function FeaturesModal({
   } | null | undefined;
   epitope?: string;
   epizapId?: string;
+  numberOfPeptides?: number;
   onClose: () => void;
 }) {
   if (!features || !features.ProteinBestHit) return null;
 
   const hit = features.ProteinBestHit;
+  const peptideType = Number(numberOfPeptides ?? 0) > 1 ? "PE" : "AF";
   const ncbiUrl = `https://www.ncbi.nlm.nih.gov/ipg/${hit.protein_id}`;
 
   return (
@@ -55,7 +58,7 @@ function FeaturesModal({
           )}
           {epitope && (
             <p>
-              <strong>Epitope sequence:</strong> {epitope}
+              <strong>Peptide ({peptideType}):</strong> {epitope}
             </p>
           )}
         </div>

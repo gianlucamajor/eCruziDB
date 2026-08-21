@@ -18,7 +18,12 @@ function Table() {
   const [data, setData] = useState<Epitope[]>([]);
   const [error, setError] = useState<string | null>(null);
   const [search, setSearch] = useState<string>("");
-  const [modalFeatures, setModalFeatures] = useState<{features: Epitope["Features"] | null; epitope?: string; epizapId?: string;} | null>(null);
+  const [modalFeatures, setModalFeatures] = useState<{
+    features: Epitope["Features"] | null;
+    epitope?: string;
+    epizapId?: string;
+    numberOfPeptides?: number;
+  } | null>(null);
   const [peptidesHtml, setPeptidesHtml] = useState<string | null>(null);
   const [modalGenomicRegions, setModalGenomicRegions] = useState<{
     regions: string[],
@@ -187,7 +192,12 @@ function Table() {
       cell: (row: Epitope) => (
         <FeaturesCell 
           features={row.Features} 
-          onShowAll={() => setModalFeatures({ features: row.Features, epitope: row.Epitope, epizapId: row.ID })}
+          onShowAll={() => setModalFeatures({
+            features: row.Features,
+            epitope: row.Epitope,
+            epizapId: row.ID,
+            numberOfPeptides: row["Number of Peptides"] ?? 0,
+          })}
           epitopeInfo={{
             id: row.ID,
             epitope: row.Epitope,
@@ -222,6 +232,7 @@ function Table() {
           features={modalFeatures.features ?? undefined}
           epitope={modalFeatures.epitope}
           epizapId={modalFeatures.epizapId}
+          numberOfPeptides={modalFeatures.numberOfPeptides}
           onClose={() => setModalFeatures(null)}
         />
       )}
