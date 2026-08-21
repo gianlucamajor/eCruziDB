@@ -24,7 +24,7 @@ const releaseNotes: ReleaseNote[] = [
       "Update modal labels to Peptide (AF/PE) and reflect AF for single-peptide records and PE for multi-peptide records",
       "Align AGRs and annotation modals with the same AF/PE terminology",
     ],
-    sourceOfData: "epitopes-data.json (md5: ce651f124ca4d27e8a4908929bc6b7f7) generated from epitopes list reported on 2025-09-25/RE-23-02-26 by epitope_reporter from Epizap:v0.6.0."
+    sourceOfData: "epitopes-data.json (md5: 01f46316c851c27327f016937d23c489) generated from epitopes list reported on 2025-09-25/RE-23-02-26 by epitope_reporter from Epizap:v0.6.0."
   },
   {
     version: "1.5.0",
