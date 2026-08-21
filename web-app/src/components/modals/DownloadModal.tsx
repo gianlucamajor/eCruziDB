@@ -10,7 +10,7 @@ const files = [
   {
     name: "epitopes-data.json",
     description: "List all epitopes and metadata in json format",
-    md5hash: "e4de1b41f054cc1dce8cb1baf345d5c6",
+    md5hash: "01f46316c851c27327f016937d23c489",
     path: "data/epitopes-data.json",
   },
   {

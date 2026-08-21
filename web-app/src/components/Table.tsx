@@ -18,7 +18,12 @@ function Table() {
   const [data, setData] = useState<Epitope[]>([]);
   const [error, setError] = useState<string | null>(null);
   const [search, setSearch] = useState<string>("");
-  const [modalFeatures, setModalFeatures] = useState<{features: Epitope["Features"] | null; epitope?: string; epizapId?: string;} | null>(null);
+  const [modalFeatures, setModalFeatures] = useState<{
+    features: Epitope["Features"] | null;
+    epitope?: string;
+    epizapId?: string;
+    numberOfPeptides?: number;
+  } | null>(null);
   const [peptidesHtml, setPeptidesHtml] = useState<string | null>(null);
   const [modalGenomicRegions, setModalGenomicRegions] = useState<{
     regions: string[],
@@ -74,18 +79,39 @@ function Table() {
     },
     {
       name: (
-        <span title="Predicted Epitopes (PEs) - Amino acid sequence identified as an epitope" style={{ cursor: "help" }}>
-          Predicted Epitopes
+        <span title="Peptide reported as antigen fragment (AF) or predicted epitope (PE)" style={{ cursor: "help" }}>
+          AFs / PEs
         </span>
       ),
       selector: (row: Epitope) => row.Epitope ?? "",
       width: "400px",
       wrap: true,
-      cell: (row: Epitope) => (
-        <span className="epitope-col-cell" style={{ display: "block", width: "100%" }}>
-          {row.Epitope ?? ""}
-        </span>
-      ),
+      cell: (row: Epitope) => {
+        const peptideCount = Number(row["Number of Peptides"] ?? 0);
+        const hasMultiplePeptides = peptideCount > 1;
+
+        return (
+          <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", width: "100%", gap: "8px" }}>
+            <span className="epitope-col-cell" style={{ display: "block", flex: 1, minWidth: 0 }}>
+              {row.Epitope ?? ""}
+            </span>
+            <span
+              title={hasMultiplePeptides ? "PE: Supported by the consensus core of multiple peptides" : "AF: Supported by a single peptide"}
+              aria-label={hasMultiplePeptides ? "PE: Supported by the consensus core of multiple peptides" : "AF: Supported by a single peptide"}
+              style={{
+                display: "inline-block",
+                width: "10px",
+                height: "10px",
+                borderRadius: "3px",
+                backgroundColor: hasMultiplePeptides ? "#9ad8a6" : "#f2d9a3",
+                border: `1px solid ${hasMultiplePeptides ? "#5dbb73" : "#d9b36b"}`,
+                boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.5)",
+                flexShrink: 0,
+              }}
+            />
+          </div>
+        );
+      },
     },
     {
       name: (
@@ -166,7 +192,12 @@ function Table() {
       cell: (row: Epitope) => (
         <FeaturesCell 
           features={row.Features} 
-          onShowAll={() => setModalFeatures({ features: row.Features, epitope: row.Epitope, epizapId: row.ID })}
+          onShowAll={() => setModalFeatures({
+            features: row.Features,
+            epitope: row.Epitope,
+            epizapId: row.ID,
+            numberOfPeptides: row["Number of Peptides"] ?? 0,
+          })}
           epitopeInfo={{
             id: row.ID,
             epitope: row.Epitope,
@@ -201,6 +232,7 @@ function Table() {
           features={modalFeatures.features ?? undefined}
           epitope={modalFeatures.epitope}
           epizapId={modalFeatures.epizapId}
+          numberOfPeptides={modalFeatures.numberOfPeptides}
           onClose={() => setModalFeatures(null)}
         />
       )}

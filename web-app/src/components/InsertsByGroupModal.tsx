@@ -44,7 +44,9 @@ const InsertsByGroupModal: React.FC<InsertsByGroupModalProps> = ({ insertsByGrou
         {epitopeInfo && (
           <div style={{ marginBottom: '1rem' }}>
             <div><strong>eCruzi Epitope ID:</strong> {epitopeInfo.id}</div>
-            <div><strong>Epitope Sequence:</strong> {epitopeInfo.epitope}</div>
+            <div>
+              <strong>Peptide ({epitopeInfo.numberOfPeptides > 1 ? 'PE' : 'AF'}):</strong> {epitopeInfo.epitope}
+            </div>
             <div><strong>Number of Peptides:</strong> {epitopeInfo.numberOfPeptides}</div>
             <div><strong>Number of Inserts:</strong> {epitopeInfo.numberOfInserts}</div>
           </div>
