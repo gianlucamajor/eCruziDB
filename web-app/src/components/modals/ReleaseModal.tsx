@@ -14,6 +14,19 @@ type ReleaseNote = {
 
 const releaseNotes: ReleaseNote[] = [
   {
+    version: "1.6.0",
+    date: "2026-08-21",
+    summary: "Interface terminology and IEDB epitopes updates.",
+    features: [
+      "epitopes-data was update with new IEDB epitopes", 
+      "Rename the AFs / PEs column and update the explanatory tooltip",
+      "Add a visual indicator for single- vs multi-peptide records in the AFs / PEs column",
+      "Update modal labels to Peptide (AF/PE) and reflect AF for single-peptide records and PE for multi-peptide records",
+      "Align AGRs and annotation modals with the same AF/PE terminology",
+    ],
+    sourceOfData: "epitopes-data.json (md5: ce651f124ca4d27e8a4908929bc6b7f7) generated from epitopes list reported on 2025-09-25/RE-23-02-26 by epitope_reporter from Epizap:v0.6.0."
+  },
+  {
     version: "1.5.0",
     date: "2026-06-20",
     summary: "Minor improvements and epitopes-data update.",
