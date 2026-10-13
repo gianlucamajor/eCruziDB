@@ -1,19 +1,19 @@
 [
   {
     "id": "",
-    "title": "Differential Reactivity of PE Analysis",
-    "description": "Global profile of differential reactivity of predicted epitopes across clinical groups.",
+    "title": "Insert abundance across clinical groups",
+    "description": "Z-scores of DNA insert abundance, standardized within each clinical group, for the 7,811 reported peptides (AFs and PEs).",
     "imagePath": "img/differential-reactivity.png",
-    "linkText": "Differential Reactivity of PE",
-    "linkUrl": "https://colab.research.google.com/github/gianlucamajor/eCruziDB/blob/main/eda/differential-reactivity-PE-by-clinical-groups-eda.ipynb"
+    "linkText": "Insert abundance across clinical groups",
+    "linkUrl": "https://colab.research.google.com/github/gianlucamajor/eCruziDB/blob/main/eda/insert-abundance-across-clinical-groups-eda.ipynb"
   },
   {
     "id": "biomarker-candidates",
-    "title": "Potential Biomarker Candidates",
-    "description": "Pairwise scatter plots for the identification of potential biomarker candidates",
-    "imagePath": "img/potential-biomarker-epitopes.png",
-    "linkText": "Potential Biomarker Candidates",
-    "linkUrl": "https://colab.research.google.com/github/gianlucamajor/eCruziDB/blob/main/eda/potential-biomaker-candidates-eda.ipynb"
+    "title": "Screening for biomarker candidates",
+    "description": "Pairwise scatter plots of standardized insert abundance in each disease group against the Control group. The screening thresholds are adjustable.",
+    "imagePath": "img/screening-biomarker-candidates.png",
+    "linkText": "Screening for biomarker candidates",
+    "linkUrl": "https://colab.research.google.com/github/gianlucamajor/eCruziDB/blob/main/eda/screening-biomaker-candidates-eda.ipynb"
   },
   {
     "id": "AGRs",
